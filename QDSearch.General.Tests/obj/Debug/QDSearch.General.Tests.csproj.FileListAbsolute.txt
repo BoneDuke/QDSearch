@@ -1,0 +1,11 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\QDSearch.General.Tests.dll.config
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\QDSearch.General.Tests.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\QDSearch.General.Tests.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\QDSearch.General.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\bin\Debug\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\obj\Debug\QDSearch.General.Tests.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\obj\Debug\QDSearch.General.Tests.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General.Tests\obj\Debug\QDSearch.General.Tests.pdb

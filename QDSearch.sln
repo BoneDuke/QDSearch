@@ -1,0 +1,171 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "QDSearch", "http://localhost:4403", "{EA4686C0-D11B-4A19-B606-4980E692C58E}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{05441d35-1ee8-4401-91d9-edcd1fd66752}|QDSearch.General.dll;{ca7b6af6-f666-49f7-b315-e740f502f414}|SMServices.Sletat.dll;{22787778-04e0-4f1d-b528-176510736673}|SMServices.Wcf.FlightSearchCityTravel.dll;{D5F39054-2443-47F9-B9B6-77C36640AEF0}|Seemplexity.Logic.Flights.dll;{c85bb9b6-bc9c-4424-8b06-b82fe6f458dc}|Seemplexity.Services.Wcf.ToursSearch.dll;{a798b2c9-aa6e-48ea-88bd-404ef2b9c21e}|Seemplexity.Services.Wcf.General.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4403"
+		Debug.AspNetCompiler.PhysicalPath = "QDSearch\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4403\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4403"
+		Release.AspNetCompiler.PhysicalPath = "QDSearch\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4403\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "QDSearch\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QDSearch.General", "QDSearch.General\QDSearch.General.csproj", "{05441D35-1EE8-4401-91D9-EDCD1FD66752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QDSearch.General.Tests", "QDSearch.General.Tests\QDSearch.General.Tests.csproj", "{E291C175-6897-4A84-A2B2-293094243A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMServices.Sletat", "SMServices.Sletat\SMServices.Sletat.csproj", "{CA7B6AF6-F666-49F7-B315-E740F502F414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMServices.Wcf.FlightSearchCityTravel", "SMServices.Wcf.FlightSearchCityTravel\SMServices.Wcf.FlightSearchCityTravel.csproj", "{22787778-04E0-4F1D-B528-176510736673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{CFE58ABC-D4C0-4102-81FB-56AA1EA7C5BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Extensions.Questionnaire", "Extensions\Seemplexity.Extensions.Questionnaire\Seemplexity.Extensions.Questionnaire.csproj", "{832CB135-0E5E-47B9-ADB9-CCAC7826E651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Logic.Flights", "Logic\Seemplexity.Logic.Flights\Seemplexity.Logic.Flights.csproj", "{D5F39054-2443-47F9-B9B6-77C36640AEF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Services.Wcf.ToursSearch", "Seemplexity.Services.Wcf.ToursSearch\Seemplexity.Services.Wcf.ToursSearch.csproj", "{C85BB9B6-BC9C-4424-8B06-B82FE6F458DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Services.Wcf.General", "Seemplexity.Services.Wcf.General\Seemplexity.Services.Wcf.General.csproj", "{A798B2C9-AA6E-48EA-88BD-404EF2B9C21E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Logic.Basket", "Logic\Seemplexity.Logic.Basket\Seemplexity.Logic.Basket.csproj", "{D57BE4FA-C893-4AC5-B52E-B501F889D549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Logic.CalculatedServices", "Logic\Seemplexity.Logic.CalculatedServices\Seemplexity.Logic.CalculatedServices.csproj", "{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Extensions.ImportDataToNoSQL", "Extensions\Seemplexity.Extensions.ImportDataToNoSQL\Seemplexity.Extensions.ImportDataToNoSQL.csproj", "{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://seemplexity.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = QDSearch.General\\QDSearch.General.csproj
+		SccProjectName1 = QDSearch.General
+		SccLocalPath1 = QDSearch.General
+		SccProjectUniqueName2 = QDSearch.General.Tests\\QDSearch.General.Tests.csproj
+		SccProjectName2 = QDSearch.General.Tests
+		SccLocalPath2 = QDSearch.General.Tests
+		SccProjectUniqueName3 = SMServices.Sletat\\SMServices.Sletat.csproj
+		SccProjectName3 = SMServices.Sletat
+		SccLocalPath3 = SMServices.Sletat
+		SccWebProject4 = true
+		SccProjectUniqueName4 = http://localhost:4403
+		SccProjectName4 = QDSearch
+		SccLocalPath4 = QDSearch
+		SccProjectEnlistmentChoice4 = 2
+		SccProjectUniqueName5 = SMServices.Wcf.FlightSearchCityTravel\\SMServices.Wcf.FlightSearchCityTravel.csproj
+		SccProjectName5 = SMServices.Wcf.FlightSearchCityTravel
+		SccLocalPath5 = SMServices.Wcf.FlightSearchCityTravel
+		SccProjectUniqueName6 = Extensions\\Seemplexity.Extensions.Questionnaire\\Seemplexity.Extensions.Questionnaire.csproj
+		SccProjectTopLevelParentUniqueName6 = QDSearch.sln
+		SccProjectName6 = Extensions/Seemplexity.Extensions.Questionnaire
+		SccLocalPath6 = Extensions\\Seemplexity.Extensions.Questionnaire
+		SccProjectUniqueName7 = Logic\\Seemplexity.Logic.Flights\\Seemplexity.Logic.Flights.csproj
+		SccProjectTopLevelParentUniqueName7 = QDSearch.sln
+		SccProjectName7 = Logic/Seemplexity.Logic.Flights
+		SccLocalPath7 = Logic\\Seemplexity.Logic.Flights
+		SccProjectUniqueName8 = Seemplexity.Services.Wcf.ToursSearch\\Seemplexity.Services.Wcf.ToursSearch.csproj
+		SccProjectName8 = Seemplexity.Services.Wcf.ToursSearch
+		SccLocalPath8 = Seemplexity.Services.Wcf.ToursSearch
+		SccProjectUniqueName9 = Seemplexity.Services.Wcf.General\\Seemplexity.Services.Wcf.General.csproj
+		SccProjectName9 = Seemplexity.Services.Wcf.General
+		SccLocalPath9 = Seemplexity.Services.Wcf.General
+		SccProjectUniqueName10 = Logic\\Seemplexity.Logic.Basket\\Seemplexity.Logic.Basket.csproj
+		SccProjectTopLevelParentUniqueName10 = QDSearch.sln
+		SccProjectName10 = Logic/Seemplexity.Logic.Basket
+		SccLocalPath10 = Logic\\Seemplexity.Logic.Basket
+		SccProjectUniqueName11 = Logic\\Seemplexity.Logic.CalculatedServices\\Seemplexity.Logic.CalculatedServices.csproj
+		SccProjectTopLevelParentUniqueName11 = QDSearch.sln
+		SccProjectName11 = Logic/Seemplexity.Logic.CalculatedServices
+		SccLocalPath11 = Logic\\Seemplexity.Logic.CalculatedServices
+		SccProjectUniqueName12 = Extensions\\Seemplexity.Extensions.ImportDataToNoSQL\\Seemplexity.Extensions.ImportDataToNoSQL.csproj
+		SccProjectTopLevelParentUniqueName12 = QDSearch.sln
+		SccProjectName12 = Extensions/Seemplexity.Extensions.ImportDataToNoSQL
+		SccLocalPath12 = Extensions\\Seemplexity.Extensions.ImportDataToNoSQL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA4686C0-D11B-4A19-B606-4980E692C58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4686C0-D11B-4A19-B606-4980E692C58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4686C0-D11B-4A19-B606-4980E692C58E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4686C0-D11B-4A19-B606-4980E692C58E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{05441D35-1EE8-4401-91D9-EDCD1FD66752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05441D35-1EE8-4401-91D9-EDCD1FD66752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05441D35-1EE8-4401-91D9-EDCD1FD66752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05441D35-1EE8-4401-91D9-EDCD1FD66752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E291C175-6897-4A84-A2B2-293094243A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E291C175-6897-4A84-A2B2-293094243A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7B6AF6-F666-49F7-B315-E740F502F414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7B6AF6-F666-49F7-B315-E740F502F414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7B6AF6-F666-49F7-B315-E740F502F414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7B6AF6-F666-49F7-B315-E740F502F414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22787778-04E0-4F1D-B528-176510736673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22787778-04E0-4F1D-B528-176510736673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22787778-04E0-4F1D-B528-176510736673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22787778-04E0-4F1D-B528-176510736673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832CB135-0E5E-47B9-ADB9-CCAC7826E651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832CB135-0E5E-47B9-ADB9-CCAC7826E651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832CB135-0E5E-47B9-ADB9-CCAC7826E651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832CB135-0E5E-47B9-ADB9-CCAC7826E651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F39054-2443-47F9-B9B6-77C36640AEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F39054-2443-47F9-B9B6-77C36640AEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F39054-2443-47F9-B9B6-77C36640AEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F39054-2443-47F9-B9B6-77C36640AEF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85BB9B6-BC9C-4424-8B06-B82FE6F458DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85BB9B6-BC9C-4424-8B06-B82FE6F458DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85BB9B6-BC9C-4424-8B06-B82FE6F458DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85BB9B6-BC9C-4424-8B06-B82FE6F458DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A798B2C9-AA6E-48EA-88BD-404EF2B9C21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A798B2C9-AA6E-48EA-88BD-404EF2B9C21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A798B2C9-AA6E-48EA-88BD-404EF2B9C21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A798B2C9-AA6E-48EA-88BD-404EF2B9C21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57BE4FA-C893-4AC5-B52E-B501F889D549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57BE4FA-C893-4AC5-B52E-B501F889D549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57BE4FA-C893-4AC5-B52E-B501F889D549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57BE4FA-C893-4AC5-B52E-B501F889D549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{832CB135-0E5E-47B9-ADB9-CCAC7826E651} = {CFE58ABC-D4C0-4102-81FB-56AA1EA7C5BC}
+		{D5F39054-2443-47F9-B9B6-77C36640AEF0} = {26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}
+		{D57BE4FA-C893-4AC5-B52E-B501F889D549} = {26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}
+		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70} = {26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}
+		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7} = {CFE58ABC-D4C0-4102-81FB-56AA1EA7C5BC}
+	EndGlobalSection
+EndGlobal

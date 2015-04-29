@@ -1,0 +1,36 @@
+
+ENABLE Trigger Costs_Sft_SqlCacheNotification_Trigger ON tbl_Costs;
+ENABLE Trigger AirSeason_Sft_SqlCacheNotification_Trigger ON AirSeason;
+ENABLE Trigger Charter_Sft_SqlCacheNotification_Trigger ON Charter;
+ENABLE Trigger QuotaObjects_Sft_SqlCacheNotification_Trigger ON QuotaObjects;
+ENABLE Trigger QuotaDetails_Sft_SqlCacheNotification_Trigger ON QuotaDetails;
+ENABLE Trigger QuotaParts_Sft_SqlCacheNotification_Trigger ON QuotaParts;
+ENABLE Trigger StopSales_Sft_SqlCacheNotification_Trigger ON StopSales;
+ENABLE Trigger StopAvia_Sft_SqlCacheNotification_Trigger ON StopAvia;
+
+ENABLE Trigger AirSeason_AspNet_SqlCacheNotification_Trigger ON AirSeason;
+ENABLE Trigger tbl_Costs_AspNet_SqlCacheNotification_Trigger ON tbl_Costs;
+ENABLE Trigger Charter_AspNet_SqlCacheNotification_Trigger ON Charter;
+ENABLE Trigger StopAvia_AspNet_SqlCacheNotification_Trigger ON StopAvia;
+ENABLE Trigger Quotas_AspNet_SqlCacheNotification_Trigger ON Quotas;
+ENABLE Trigger QuotaDetails_AspNet_SqlCacheNotification_Trigger ON QuotaDetails;
+ENABLE Trigger QuotaObjects_AspNet_SqlCacheNotification_Trigger ON QuotaObjects;
+ENABLE Trigger StopSales_AspNet_SqlCacheNotification_Trigger ON StopSales;
+
+ENABLE Trigger Pansion_AspNet_SqlCacheNotification_Trigger ON Pansion;
+ENABLE Trigger CityDictionary_AspNet_SqlCacheNotification_Trigger ON CityDictionary;
+ENABLE Trigger HotelRooms_AspNet_SqlCacheNotification_Trigger ON HotelRooms;
+ENABLE Trigger HotelDictionary_AspNet_SqlCacheNotification_Trigger ON HotelDictionary;
+ENABLE Trigger Rates_AspNet_SqlCacheNotification_Trigger ON Rates;
+ENABLE Trigger RealCourses_AspNet_SqlCacheNotification_Trigger ON RealCourses;
+ENABLE Trigger Accmdmentype_AspNet_SqlCacheNotification_Trigger ON Accmdmentype;
+ENABLE Trigger Resorts_AspNet_SqlCacheNotification_Trigger ON Resorts;
+
+
+ENABLE Trigger Service_AspNet_SqlCacheNotification_Trigger ON Service;
+ENABLE Trigger Rooms_AspNet_SqlCacheNotification_Trigger ON Rooms;
+ENABLE Trigger RoomsCategory_AspNet_SqlCacheNotification_Trigger ON RoomsCategory;
+ENABLE Trigger tbl_Country_AspNet_SqlCacheNotification_Trigger ON tbl_Country;
+ENABLE Trigger AirService_AspNet_SqlCacheNotification_Trigger ON AirService;
+ENABLE Trigger TipTur_AspNet_SqlCacheNotification_Trigger ON TipTur;
+ENABLE Trigger tbl_TurList_AspNet_SqlCacheNotification_Trigger ON tbl_TurList;

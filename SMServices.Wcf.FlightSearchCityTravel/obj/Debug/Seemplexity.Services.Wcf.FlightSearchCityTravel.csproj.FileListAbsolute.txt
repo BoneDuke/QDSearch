@@ -1,0 +1,13 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\Seemplexity.Services.Wcf.FlightSearchCityTravel.dll.config
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\Seemplexity.Services.Wcf.FlightSearchCityTravel.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\Seemplexity.Services.Wcf.FlightSearchCityTravel.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\QDSearch.General.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\obj\Debug\Seemplexity.Services.Wcf.FlightSearchCityTravel.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\obj\Debug\Seemplexity.Services.Wcf.FlightSearchCityTravel.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\obj\Debug\Seemplexity.Services.Wcf.FlightSearchCityTravel.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\Seemplexity.Logic.Flights.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Wcf.FlightSearchCityTravel\bin\Debug\Seemplexity.Logic.Flights.pdb

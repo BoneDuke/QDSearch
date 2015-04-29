@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{756e2602-e4eb-4e76-bc95-f6d69f2e2a36}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/QDSearch</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SourceWebProject>http://localhost:4403</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/2/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Seemplexity.Logic.Flights\Seemplexity.Logic.Flights.csproj">
+      <Project>{D5F39054-2443-47F9-B9B6-77C36640AEF0}</Project>
+      <Name>Seemplexity.Logic.Flights</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QDSearch.General\QDSearch.General.csproj">
+      <Project>{05441D35-1EE8-4401-91D9-EDCD1FD66752}</Project>
+      <Name>QDSearch.General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seemplexity.Services.Wcf.General\Seemplexity.Services.Wcf.General.csproj">
+      <Project>{A798B2C9-AA6E-48EA-88BD-404EF2B9C21E}</Project>
+      <Name>Seemplexity.Services.Wcf.General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seemplexity.Services.Wcf.ToursSearch\Seemplexity.Services.Wcf.ToursSearch.csproj">
+      <Project>{C85BB9B6-BC9C-4424-8B06-B82FE6F458DC}</Project>
+      <Name>Seemplexity.Services.Wcf.ToursSearch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMServices.Sletat\SMServices.Sletat.csproj">
+      <Project>{CA7B6AF6-F666-49F7-B315-E740F502F414}</Project>
+      <Name>SMServices.Sletat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMServices.Wcf.FlightSearchCityTravel\SMServices.Wcf.FlightSearchCityTravel.csproj">
+      <Project>{22787778-04E0-4F1D-B528-176510736673}</Project>
+      <Name>SMServices.Wcf.FlightSearchCityTravel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

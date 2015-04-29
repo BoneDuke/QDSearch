@@ -1,0 +1,51 @@
+html body {
+font-family:Calibri, Helvetica, Tahoma, Verdana, sans-serif;
+text-align:left;
+background:#f9f6e0;
+padding:30px;
+margin:30px;
+color:#888888;
+}
+
+a {
+color:#3366cc;
+}
+
+/* 404-styles starts here */
+
+.error-page {
+display:block;
+margin:0 auto;
+width:950px;
+text-shadow:0 1px 0 #fff;
+}
+
+.error-img {
+float:left;
+
+}
+
+.error {
+display:block;
+width:473px;
+float:left;
+font-weight:bold;
+font-size:18px;
+padding-left:23px;
+height:250px;
+}
+
+.error-label {
+font-weight:bold;
+font-size:36px;
+}
+
+.error-message {
+clear:both;
+display:block;
+font-weight:bold;
+font-size:18px;
+margin-top:60px;
+padding-top:15px;
+border-top:1px solid #cccccc;
+}

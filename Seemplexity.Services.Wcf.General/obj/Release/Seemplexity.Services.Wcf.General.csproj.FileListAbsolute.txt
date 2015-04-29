@@ -1,0 +1,4 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\Seemplexity.Services.Wcf.General\bin\Release\Seemplexity.Services.Wcf.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Seemplexity.Services.Wcf.General\bin\Release\Seemplexity.Services.Wcf.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\Seemplexity.Services.Wcf.General\obj\Release\Seemplexity.Services.Wcf.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Seemplexity.Services.Wcf.General\obj\Release\Seemplexity.Services.Wcf.General.pdb

@@ -1,0 +1,1263 @@
+﻿html body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: left;
+    background: #f9f6e0;
+    padding: 0;
+    margin: 0;
+}
+
+.ToursSearchBox {
+    -moz-min-width: 1000px;
+    -ms-min-width: 1000px;
+    -o-min-width: 1000px;
+    -webkit-min-width: 1000px;
+    min-width: 1000px;
+}
+
+    .ToursSearchBox a, input, select, option {
+        cursor: pointer;
+    }
+
+    .ToursSearchBox img {
+        border: 0;
+    }
+
+    .ToursSearchBox a {
+        color: #3366cc;
+    }
+
+    .ToursSearchBox .TFS_FilterNumber {
+        font-size: 14px;
+        font-weight: bold;
+        color: #6699CC;
+        border-right: 1px #7bb8f5 solid;
+        padding: 0 4px 0 0;
+        margin: 0 1px 0 0;
+    }
+
+/**********************  Стили фильтров поиска начало     *************************/
+
+.TourSearchFilter {
+    position: relative;
+    color: #333;
+    background: #fdefdf;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    letter-spacing: 0.01em;
+}
+
+.TFS_MenuWrapper {
+    padding: 10px 10px 10px 10px;
+    max-width: 1200px;
+    -moz-min-width: 1000px;
+    -ms-min-width: 1000px;
+    -o-min-width: 1000px;
+    -webkit-min-width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+    .TFS_MenuWrapper a {
+        display: inline-block;
+        margin: 0 15px 0 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #36c;
+        text-decoration: underline;
+    }
+
+
+.TourSearchFilter .ControlWrapper .OptionAllWrapper input,
+.TourSearchFilter .ControlWrapper .OptionAllWrapper label,
+.TourSearchFilter .ControlWrapper .OptionsList label,
+.TourSearchFilter .ControlWrapper .OptionsList input {
+    cursor: pointer;
+}
+
+.TourSearchFilter .OptionAllWrapper,
+.TourSearchFilter .OptionsListWrapper,
+.TourSearchFilter .ControlWrapper,
+.TourSearchFilter .TFS_CityFromWrapper {
+    overflow: hidden;
+}
+
+.TourSearchFilter .TFS_FilterWrapper {
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 3px;
+    background: #fff;
+}
+
+    .TourSearchFilter .TFS_FilterWrapper:hover {
+        background: #fdf8f4;
+    }
+
+        .TourSearchFilter .TFS_FilterWrapper:hover .TFS_FilterNumber {
+            color: #ff9900;
+            border-color: #ff9900;
+        }
+
+.TourSearchFilter .TFS_FilterTitle,
+.TourSearchFilter .ListTitle {
+    font-size: 14px;
+    -ms-text-shadow: 0 1px 0 #fff;
+    -webkit-text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px 0 #fff;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #777;
+}
+
+.TourSearchFilter .OptionAllWrapper {
+    margin-top: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+    border-bottom: 1px #dcdcdc solid;
+}
+
+.TourSearchFilter .TFS_FilterWrapper .OptionAllWrapper > input[type='checkbox'],
+.TourSearchFilter .TFS_FilterWrapper .OptionsListWrapper .OptionsList > input[type='checkbox'] {
+    position: relative;
+    top: 2px;
+}
+
+.TourSearchFilter .TFS_FilterWrapper .OptionsListWrapper .OptionsList {
+    position: relative;
+}
+
+.TourSearchFilter .TFS_CountryInfoBlock {
+    overflow: hidden;
+    position: relative;
+    background: #f9f6e0;
+}
+
+    .TourSearchFilter .TFS_CountryInfoBlock .CountryDesc,
+    .TourSearchFilter .TFS_CountryInfoBlock .CountryDescTable {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+    .TourSearchFilter .TFS_CountryInfoBlock .CountryDescTable {
+        width: 100%;
+    }
+
+        .TourSearchFilter .TFS_CountryInfoBlock .CountryDescTable .leftcol {
+            overflow: visible;
+            margin: 0 0 10px 0;
+            padding: 10px;
+            width: 74%;
+            vertical-align: top;
+            -ms-text-shadow: 0 1px 0 #ffffff;
+            -webkit-text-shadow: 0 1px 0 #ffffff;
+            text-shadow: 0 1px 0 #ffffff;
+            border: 1px solid #ccc;
+            background: #f7f7f7;
+        }
+
+        .TourSearchFilter .TFS_CountryInfoBlock .CountryDescTable .mrgtmp {
+            width: 0.7%;
+            background: #f9f6e0;
+            border: none;
+        }
+
+        .TourSearchFilter .TFS_CountryInfoBlock .CountryDescTable .rightcol {
+            /*background-color: #F8F8F8;*/
+            margin: 0 0 10px 0;
+            padding: 10px;
+            width: 25.3%;
+            vertical-align: top;
+            -ms-text-shadow: 0 1px 0 #ffffff;
+            -webkit-text-shadow: 0 1px 0 #ffffff;
+            text-shadow: 0 1px 0 #ffffff;
+            border: 1px solid #ccc;
+            background: #f7f7f7;
+        }
+
+        .TourSearchFilter .TFS_CountryInfoBlock .CountryDescTable .DescLine {
+            margin-top: 7px;
+            margin-bottom: 7px;
+            border-style: none none dashed none;
+            border-bottom-width: 1px;
+        }
+
+    .TourSearchFilter .TFS_CountryInfoBlock .CountryDesc {
+        display: block;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #f7f7f7;
+        -ms-text-shadow: 0 1px 0 #ffffff;
+        -webkit-text-shadow: 0 1px 0 #ffffff;
+        text-shadow: 0 1px 0 #ffffff;
+    }
+
+
+        .TourSearchFilter .TFS_CountryInfoBlock .CountryDesc .DescLine {
+            margin-top: 7px;
+            margin-bottom: 7px;
+            border-style: none none dashed none;
+            border-bottom-width: 1px;
+        }
+
+.TourSearchFilter .TFS_FiltersShadow {
+    overflow: hidden;
+    border-top: 1px solid #E0C39E;
+    border-bottom: 1px solid #E0C39E;
+}
+
+.TourSearchFilter .TFS_TopBlock {
+    padding: 7px 10px 6px 10px;
+    overflow: hidden;
+}
+
+    .TourSearchFilter .TFS_TopBlock .TFS_FilterTitle {
+        margin: 0 5px 0 0;
+    }
+
+    .TourSearchFilter .TFS_TopBlock .TFS_ContriesToWrapper {
+        display: inline-block;
+        margin: 0;
+        width: 20%;
+    }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_ContriesToWrapper select {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 13px;
+            padding: 2px;
+            margin: 2px 0 2px 0;
+        }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_ContriesToWrapper:hover .TFS_FilterNumber {
+            color: #ff9900;
+            border-color: #ff9900;
+        }
+
+    .TourSearchFilter .TFS_TopBlock .TFS_CityFromWrapper {
+        margin: 0 0 0 4px;
+    }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_CityFromWrapper .TFS_FilterTitle {
+            margin: 0 24px 0 0;
+        }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_CityFromWrapper:hover .TFS_FilterNumber {
+            color: #ff9900;
+            border-color: #ff9900;
+        }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_CityFromWrapper span span input {
+            position: relative;
+            top: 2px;
+        }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_CityFromWrapper span span label {
+            cursor: pointer;
+        }
+
+            .TourSearchFilter .TFS_TopBlock .TFS_CityFromWrapper span span label:hover {
+                color: #000000;
+            }
+
+    .TourSearchFilter .TFS_TopBlock .TFS_ResetSearch {
+        position: relative;
+        top: 0px;
+        display: block;
+        float: right;
+        overflow: hidden;
+        margin: 0;
+        padding: 5px 8px;
+        background: #efefef;
+        border: 1px solid #cccccc;
+        -ms-text-shadow: 0 1px 0 #ffffff;
+        -webkit-text-shadow: 0 1px 0 #ffffff;
+        text-shadow: 0 1px 0 #ffffff;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_ResetSearch:hover {
+            border: 1px solid #bbbbbb;
+            background: #ffffff;
+            color: #555555;
+        }
+
+        .TourSearchFilter .TFS_TopBlock .TFS_ResetSearch:active {
+            border: 1px solid #dddddd;
+            border: 1px solid #888888;
+            background: #dddddd;
+            color: #000000;
+            -ms-text-shadow: 0 1px 0 #cccccc;
+            -webkit-text-shadow: 0 1px 0 #cccccc;
+            text-shadow: 0 1px 0 #cccccc;
+        }
+
+            .TourSearchFilter .TFS_TopBlock .TFS_ResetSearch:active span {
+                -ms-text-shadow: 0 1px 0 #cccccc;
+                -webkit-text-shadow: 0 1px 0 #cccccc;
+                text-shadow: 0 1px 0 #cccccc;
+            }
+
+.TourSearchFilter .TFS_FirstBlock {
+    overflow: hidden;
+    width: 100%;
+    clear: both;
+}
+
+.TourSearchFilter .TFS_SecondBlock {
+    overflow: hidden;
+    width: 20%;
+    float: left;
+}
+
+    .TourSearchFilter .TFS_SecondBlock .TFS_TourTypesWrapper .OptionsListWrapper .OptionsList {
+        display: block;
+        overflow: auto;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .TourSearchFilter .TFS_SecondBlock .TFS_CitiesToWrapper {
+        margin: 0;
+    }
+
+        .TourSearchFilter .TFS_SecondBlock .TFS_CitiesToWrapper .OptionsListWrapper .OptionsList {
+            display: block;
+            height: 278px;
+            overflow-y: auto;
+        }
+
+
+.TourSearchFilter .TFS_RigthWrapper {
+    overflow: hidden;
+    width: 80%;
+    float: left;
+}
+
+    .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock,
+    .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock,
+    .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock {
+        overflow: hidden;
+        margin-left: 3px;
+        clear: both;
+    }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TSF_TourListWrapper {
+            padding: 10px 10px 10px 10px;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TSF_TourListWrapper .TFS_FilterTitle {
+                position: relative;
+                display: block;
+                float: left;
+                margin: 0;
+                margin-top: 5px;
+                overflow: hidden;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TSF_TourListWrapper div {
+                margin-left: 129px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TSF_TourListWrapper select {
+                width: 100%;
+                font-size: 12px;
+                padding: 2px;
+                margin: 2px 0 2px 0;
+            }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper {
+            padding: 10px 10px 10px 10px;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker label {
+                position: relative;
+                top: 1px;
+                font-size: 14px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker .FilterTitle,
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker .AvlbPeriodBlk {
+                position: relative;
+                font-size: 14px;
+                -ms-text-shadow: 0 1px 0 #fff;
+                -webkit-text-shadow: 0 1px 0 #fff;
+                text-shadow: 0 1px 0 #fff;
+                top: 1px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker span.FilterTitle {
+                font-weight: bold;
+                color: #777;
+                margin-right: 4px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker .riTextBox {
+                font-family: Arial,Helvetica,sans-serif;
+                font-size: 12px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker .AvlbPeriodBlk {
+                display: inline;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_ArrivalWrapper .ArrivalDatePicker .AvlbPeriodBlk span {
+                    display: inline-block;
+                    position: relative;
+                    top: 1px;
+                    font-weight: bold;
+                    color: #777;
+                }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper {
+            padding: 10px 10px 10px 10px;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .ControlWrapper {
+                clear: both;
+                overflow: hidden;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .ListTitle {
+                vertical-align: middle;
+                margin-right: 18px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionAllWrapper {
+                margin: 0 7px 0 0;
+                padding: 0;
+                display: inline;
+                border: none;
+                vertical-align: middle;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper {
+                vertical-align: middle;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList input {
+                        display: inline-block !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        width: 0 !important;
+                        height: 0 !important;
+                        line-height: 0 !important;
+                        overflow: hidden !important;
+                        letter-spacing: 0 !important;
+                        font-size: 0 !important;
+                        border: none !important;
+                        -webkit-border-image: 0 !important;
+                        -moz-border-image: 0 !important;
+                        -ms-border-image: 0 !important;
+                        -o-border-image: 0 !important;
+                        border-image: 0 !important;
+                    }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label {
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        display: block;
+                        overflow: hidden;
+                        float: left;
+                        width: 20px;
+                        height: 15px;
+                        text-align: center;
+                        padding-top: 4px;
+                        cursor: pointer;
+                        border: 1px solid #ccc;
+                        border-right: none;
+                        -ms-text-shadow: 0 1px 0 #ffffff;
+                        -webkit-text-shadow: 0 1px 0 #ffffff;
+                        text-shadow: 0 1px 0 #ffffff;
+                        background: #efefef;
+                    }
+
+                        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label.LastOption {
+                            border-right: 1px solid #ccc;
+                        }
+
+                        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label.FirstOption {
+                            border-left: 1px solid #ccc;
+                        }
+
+                        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label.OptionChecked {
+                            border: 1px solid #004794;
+                            width: 20px;
+                            background: #0076f6;
+                            color: #fff;
+                            -ms-text-shadow: 0 1px 0 #002c5c;
+                            -webkit-text-shadow: 0 1px 0 #002c5c;
+                            text-shadow: 0 1px 0 #002c5c;
+                        }
+
+                            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label.OptionChecked.LastOption {
+                                border: 1px solid #004794;
+                            }
+
+                            .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label.OptionChecked.FirstOption {
+                                border: 1px solid #004794;
+                            }
+
+                        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label:hover {
+                            border: 1px solid #bbbbbb;
+                            width: 19px;
+                            background: #ffffff;
+                            color: #333333;
+                            cursor: pointer;
+                        }
+
+
+                        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList label.OptionChecked:hover {
+                            border: 1px solid #004794;
+                            width: 20px;
+                            background: #0076f6;
+                            color: #fff;
+                            -ms-text-shadow: 0 1px 0 #002c5c;
+                            -webkit-text-shadow: 0 1px 0 #002c5c;
+                            text-shadow: 0 1px 0 #002c5c;
+                        }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList input.OptionChecked.LastOption:hover {
+                        border: 1px solid #004794;
+                        width: 19px;
+                        background: #0076f6;
+                        color: #fff;
+                        -ms-text-shadow: 0 1px 0 #002c5c;
+                        -webkit-text-shadow: 0 1px 0 #002c5c;
+                        text-shadow: 0 1px 0 #002c5c;
+                    }
+
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelCtgWrapper .OptionsListWrapper,
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_PansionsWrapper .OptionsListWrapper,
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .OptionsListWrapper {
+            overflow: hidden;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelCtgWrapper .OptionsListWrapper .OptionsList,
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_PansionsWrapper .OptionsListWrapper .OptionsList {
+                display: block;
+                height: 251px;
+                overflow-y: auto;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .OptionsListWrapper .OptionsList,
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .SelectedOptionsListWrapper .SelectedOptionsList {
+                display: block;
+                height: 251px;
+                overflow-y: auto;
+            }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_FilterWrapper {
+            float: left;
+            padding: 0;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_FilterWrapper > div {
+                padding: 11px 10px 10px 10px;
+            }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelCtgWrapper {
+            width: 20%;
+        }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_PansionsWrapper {
+            width: 19%;
+        }
+
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper {
+            width: 61%;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper {
+                padding-top: 5px;
+                overflow: hidden;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper div span input {
+                    position: relative;
+                    top: 2px;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .ListTitle {
+                    float: left;
+                    margin: 5px 0 0 0;
+                    display: inline-block;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .HotelNameFilterWrapper {
+                    margin: 0 3px 0 85px;
+                }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .HotelNameFilterWrapper .HotelNameFilter {
+                        width: 100%;
+                        cursor: text;
+                        margin: 0;
+                        font-size: 12px;
+                    }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .OptionAllWrapper {
+                    width: 100%;
+                    float: left;
+                    margin-top: 4px;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .OptionsListWrapper {
+                    width: 65%;
+                    float: left;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .SelectedOptionsListWrapper {
+                    width: 35%;
+                    float: left;
+                    background: url("images/1px.gif") repeat-y left;
+                    overflow: hidden;
+                    font-size: 10px;
+                }
+
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .SelectedOptionsListWrapper .SelectedOptionsList {
+                        padding: 0 0 0 10px;
+                    }
+
+                        .TourSearchFilter .TFS_RigthWrapper .TFS_ForthBlock .TFS_HotelsWrapper .HotelsFilterWrapper .SelectedOptionsListWrapper .SelectedOptionsList > input[type='checkbox'] {
+                            position: relative;
+                            top: 2px;
+                        }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_FilterWrapper {
+            float: left;
+            padding: 0;
+        }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper,
+        .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_PersonsWrapper,
+        .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_RoomPersonsWrapper .TFS_RoomsWrapper {
+            overflow: hidden;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_RoomPersonsWrapper .TFS_RoomsWrapper select {
+                font-size: 12px;
+            }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper {
+            height: 100px;
+        }
+
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper {
+                padding: 0;
+                margin: 0;
+                width: 39%;
+                height: 100%;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper .TFS_PersonsWrapper,
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper .TFS_RoomsWrapper {
+                    padding: 10px;
+                }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper .TFS_PersonsWrapper .TFS_FilterTitle {
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper .TFS_PersonsWrapper input {
+                        cursor: text;
+                        width: 50px;
+                        margin: 0 0 5px 0;
+                        font-size: 12px;
+                    }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper .TFS_PersonsWrapper .TFS_PersonsLeft {
+                        overflow: hidden;
+                        float: left;
+                    }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_RoomPersonsWrapper .TFS_PersonsWrapper .TFS_ExtraChildrenWrapper {
+                        overflow: hidden;
+                        float: left;
+                        padding: 0 0 0 15px;
+                    }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper {
+                width: 31%;
+                padding: 0;
+                margin: 0;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper > div {
+                    overflow: hidden;
+                    padding: 10px;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .TFS_QuotesTbl {
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                }
+
+                    .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .TFS_QuotesTbl td {
+                        width: 22px;
+                        height: 21px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .TFS_QuotasCaption .TFS_FilterTitle {
+                    color: #0066ff;
+                    font-weight: bold;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .QValEnabled {
+                    background-color: #008900;
+                    border-right: 1px solid #ffffff;
+                    border-bottom: 1px solid #ffffff;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .QValRQ {
+                    background-color: #f47d00;
+                    border-right: 1px solid #ffffff;
+                    border-bottom: 1px solid #ffffff;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .QValNo {
+                    background-color: #d73a39;
+                    border-bottom: 1px solid #ffffff;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .TFS_HotelsQuotesImgCell {
+                    width: 19px;
+                    height: 19px;
+                    background-image: url(images/hotel.gif);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MenRoomsQuotasWrapper .TFS_QuotasWrapper .TFS_FlightQuotesImgCell {
+                    width: 19px;
+                    height: 19px;
+                    background-image: url(images/airplane.gif);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper {
+            width: 30%;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper .TFS_MaxPriceWrapper {
+                margin-top: 17px;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper .TFS_MaxPriceWrapper input {
+                    cursor: text;
+                    width: 140px;
+                    margin-top: 7px;
+                    font-size: 12px;
+                }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper > div {
+                padding: 10px;
+                overflow: hidden;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper .TFS_RatesWrapper,
+            .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper .TFS_MaxPriceWrapper {
+                float: none;
+                background: none;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_FifthBlock .TFS_MoneyWrapper .TFS_RatesWrapper .TFS_FilterTitle {
+                    margin-right: 5px;
+                }
+
+    .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock {
+        float: right;
+        clear: both;
+        width: 50%;
+        overflow: hidden;
+    }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_RowsNumberWrapper {
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            padding: 17px 0 15px 0;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_RowsNumberWrapper .TFS_FilterTitle {
+                margin: 0 7px 0 11px;
+            }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_RowsNumberWrapper select {
+                margin: 0;
+                padding: 0;
+            }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_SearchBtnWrapper {
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+
+            .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_SearchBtnWrapper input {
+                display: inline-block;
+                overflow: hidden;
+                padding: 0;
+                margin: 10px 0 0 0;
+                border: 2px solid #550000;
+                background: #990000;
+                color: #fff;
+                -ms-text-shadow: 0 1px 0 #550000;
+                -webkit-text-shadow: 0 1px 0 #550000;
+                text-shadow: 0 1px 0 #550000;
+                width: 90%;
+                height: 32px;
+                font-weight: bold;
+            }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_SearchBtnWrapper input:hover {
+                    background: #cc3333;
+                    border: 2px solid #330000;
+                    -ms-text-shadow: 0 1px 0 #330000;
+                    -webkit-text-shadow: 0 1px 0 #330000;
+                    text-shadow: 0 1px 0 #330000;
+                }
+
+                .TourSearchFilter .TFS_RigthWrapper .TFS_SixthBlock .TFS_SearchBtnWrapper input:active {
+                    background: #330000;
+                    border: 2px solid #330000;
+                    -ms-text-shadow: 0 1px 0 #330000;
+                    -webkit-text-shadow: 0 1px 0 #330000;
+                    text-shadow: 0 1px 0 #330000;
+                }
+
+.TourSearchFilter .TFS_ProgressLoadBlock .ProgressBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    -ms-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.TourSearchFilter .TFS_ProgressLoadBlock .ProgressIcon {
+    position: absolute;
+    -ms-opacity: 1;
+    opacity: 1;
+    top: 45%;
+    left: 49%;
+}
+
+.ArrivalCalendar .rcMainTable .rcRow td,
+.ArrivalCalendar .rcMainTable .rcRow td a,
+.ArrivalCalendar .rcMainTable .rcRow td span {
+    background: #c3fac3 !important;
+    font-weight: bold !important;
+    color: #005900 !important;
+}
+
+    .ArrivalCalendar .rcMainTable .rcRow td.rcOtherMonth,
+    .ArrivalCalendar .rcMainTable .rcRow td.rcOtherMonth a {
+        background: #e5ffe5 !important;
+        color: #00a300 !important;
+        background: #edffed !important;
+        color: #64c864 !important;
+    }
+
+
+    .ArrivalCalendar .rcMainTable .rcRow td.rcDisabled,
+    .ArrivalCalendar .rcMainTable .rcRow td.rcDisabled span {
+        background: #ffffff !important;
+        -ms-filter: "alpha(opacity=100)" !important;
+        -moz-opacity: 1 !important;
+        -ms-opacity: 1 !important;
+        opacity: 1 !important;
+        color: #000000 !important;
+    }
+
+    .ArrivalCalendar .rcMainTable .rcRow td.rcOutOfRange,
+    .ArrivalCalendar .rcMainTable .rcRow td.rcOutOfRange span,
+    .ArrivalCalendar .rcMainTable .rcRow td.rcOtherMonth.rcDisabled,
+    .ArrivalCalendar .rcMainTable .rcRow td.rcOtherMonth.rcDisabled span {
+        background: #ffffff !important;
+        color: #dedede !important;
+    }
+
+
+    .ArrivalCalendar .rcMainTable .rcRow td.rcWeekend a,
+    .ArrivalCalendar .rcMainTable .rcRow td.rcWeekend span {
+        color: #cb3400 !important;
+    }
+
+    .ArrivalCalendar .rcMainTable .rcRow td.rcSelected a {
+        color: #fff !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    .ArrivalCalendar .rcMainTable .rcRow td.rcSelected {
+        background: none !important;
+        border: 1px solid #004794 !important;
+        background: #0076f6 !important;
+        color: #fff !important;
+        -ms-text-shadow: 0 1px 0 #002c5c !important;
+        -webkit-text-shadow: 0 1px 0 #002c5c !important;
+        text-shadow: 0 1px 0 #002c5c !important;
+        -webkit-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0058b6', endColorstr = '#0076f6') !important;
+        -moz-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0058b6', endColorstr = '#0076f6') !important;
+        -o-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0058b6', endColorstr = '#0076f6') !important;
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0058b6', endColorstr = '#0076f6')" !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0058b6', endColorstr = '#0076f6') !important;
+        background-image: -moz-linear-gradient(top, #0058b6, #0076f6) !important;
+        background-image: -ms-linear-gradient(top, #0058b6, #0076f6) !important;
+        background-image: -o-linear-gradient(top,#0058b6, #0076f6) !important;
+        background-image: -webkit-gradient(linear, center top, center bottom, from(#0058b6), to(#0076f6)) !important;
+        background-image: -webkit-linear-gradient(top,#0058b6, #0076f6) !important;
+        background-image: linear-gradient(top, #0058b6, #0076f6) !important;
+    }
+
+/********** настройка стилей отображения конец  *****/
+
+/**********************  Стили результатов поиска начало     *************************/
+.TFS_ToursSearchResults {
+    margin: 0 15px 0 15px;
+}
+
+    .TFS_ToursSearchResults .TFS_SearchResultsMsg {
+        display: block;
+        margin: 15px 0 0 0;
+        text-align: center;
+        -ms-text-shadow: 0 1px 0 #ffffff;
+        -webkit-text-shadow: 0 1px 0 #ffffff;
+        text-shadow: 0 1px 0 #ffffff;
+        border: 1px solid #ffbbbb;
+    }
+
+        .TFS_ToursSearchResults .TFS_SearchResultsMsg span {
+            display: inline-block;
+            padding: 35px 30px 35px 30px;
+            font-size: 16px;
+            color: #0058b6;
+            -ms-text-shadow: 0 1px 0 #ffffff;
+            -webkit-text-shadow: 0 1px 0 #ffffff;
+            text-shadow: 0 1px 0 #ffffff;
+        }
+
+.TFS_PagerBlockTop .TFS_PagerBtnPrev,
+.TFS_PagerBlockTop .TFS_PagerBtnNext,
+.TFS_PagerBlockTop .TFS_PagerItem,
+.TFS_PagerBlockButtom .TFS_PagerBtnPrev,
+.TFS_PagerBlockButtom .TFS_PagerBtnNext,
+.TFS_PagerBlockButtom .TFS_PagerItem {
+    display: block;
+    float: left;
+    padding: 4px 8px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    color: #333333;
+    -ms-text-shadow: 0 1px 0 #ffffff;
+    -webkit-text-shadow: 0 1px 0 #ffffff;
+    text-shadow: 0 1px 0 #ffffff;
+    background: #efefef;
+}
+
+.TFS_PagerBlockTop a.TFS_PagerBtnPrev:hover,
+.TFS_PagerBlockTop a.TFS_PagerBtnNext:hover,
+.TFS_PagerBlockTop a.TFS_PagerItem:hover,
+.TFS_PagerBlockButtom a.TFS_PagerBtnPrev:hover,
+.TFS_PagerBlockButtom a.TFS_PagerBtnNext:hover,
+.TFS_PagerBlockButtom a.TFS_PagerItem:hover {
+    border: 1px solid #bbbbbb;
+    background: #ffffff;
+    color: #333;
+}
+
+.TFS_PagerBlockTop .TFS_PagerItemSelected,
+.TFS_PagerBlockButtom .TFS_PagerItemSelected {
+    cursor: default;
+    border: 1px solid #004794;
+    background: #0076f6;
+    color: #fff;
+    -ms-text-shadow: 0 1px 0 #002c5c;
+    -webkit-text-shadow: 0 1px 0 #002c5c;
+    text-shadow: 0 1px 0 #002c5c;
+}
+
+.TFS_PagerBlockTop {
+    display: block;
+    clear: both;
+    margin: 35px 0 7px 0;
+    height: 35px;
+}
+
+.TFS_PagerBlockButtom {
+    display: block;
+    clear: both;
+    margin: 15px 0 0 0;
+    height: 35px;
+}
+
+.TFS_SeachedToursTableWrapper {
+    overflow: hidden;
+}
+
+.TFS_SeachedToursTable {
+    overflow: visible;
+    font-size: 12px;
+    background: #ffffff;
+    width: 100%;
+}
+
+    .TFS_SeachedToursTable td {
+        vertical-align: top;
+        padding: 3px 4px;
+    }
+
+    .TFS_SeachedToursTable thead {
+        vertical-align: top;
+        border-top: 1px solid #e0c39e;
+        background: #fdefdf;
+    }
+
+        .TFS_SeachedToursTable thead th {
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 12px;
+            padding: 4px 5px;
+            text-align: left;
+        }
+
+    .TFS_SeachedToursTable th.TFS_Sortable:hover {
+        background-color: #efdabf;
+        cursor: pointer;
+    }
+
+        .TFS_SeachedToursTable th.TFS_Sortable:hover a span {
+            color: #000;
+            border-bottom: 1px dotted #ccc;
+            -webkit-text-shadow: 0 1px 0 #fff;
+            -ms-text-shadow: 0 1px 0 #fff;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+    .TFS_SeachedToursTable thead,
+    .TFS_SeachedToursTable th {
+        text-align: center;
+    }
+
+    .TFS_SeachedToursTable .TFS_SubHeaderCell {
+        border: 0;
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #bbbbbb;
+    }
+
+    .TFS_SeachedToursTable .TFS_HeaderLastCell {
+        border: 0;
+    }
+
+    .TFS_SeachedToursTable .TFS_SubHeaderLastCell {
+        border: 0;
+        border-bottom: 1px solid #bbbbbb;
+    }
+
+    .TFS_SeachedToursTable .TFS_TAltRow {
+        background: #f3f3f3;
+    }
+
+    .TFS_SeachedToursTable a,
+    .TFS_PagerBlockTop a,
+    .TFS_PagerBlockButtom a {
+        text-decoration: none;
+    }
+
+    .TFS_SeachedToursTable th a {
+        display: block;
+        padding-left: 9px;
+        background: url(images/sort-arrow.png)no-repeat top left;
+        background-position: 0 5px;
+        text-decoration: none;
+        color: #333;
+        font-size: 13px;
+    }
+
+        .TFS_SeachedToursTable th a span {
+            border-bottom: 1px dotted #ccc;
+            -webkit-text-shadow: 0 1px 0 #fff;
+            -ms-text-shadow: 0 1px 0 #fff;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+    .TFS_SeachedToursTable th.SortedUp {
+        background-color: #dcdcdc;
+    }
+
+        .TFS_SeachedToursTable th.SortedUp a {
+            color: #777;
+        }
+
+            .TFS_SeachedToursTable th.SortedUp a span {
+                border-bottom: 1px dotted #ccc;
+                -webkit-text-shadow: 0 1px 0 #fff;
+                -ms-text-shadow: 0 1px 0 #fff;
+                text-shadow: 0 1px 0 #fff;
+            }
+
+    .TFS_SeachedToursTable tbody .TFS_HotelQuota,
+    .TFS_SeachedToursTable tbody .TFS_FlightQouta {
+        text-align: center;
+        vertical-align: middle;
+        padding: 1px 1px;
+    }
+
+    .TFS_SeachedToursTable tbody .TFS_Hq_Availiable,
+    .TFS_SeachedToursTable tbody .TFS_FqTo_Availiable,
+    .TFS_SeachedToursTable tbody .TFS_FqForward_Availiable {
+        background: #009900;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .TFS_SeachedToursTable tbody .TFS_Hq_Small,
+    .TFS_SeachedToursTable tbody .TFS_FqTo_Small,
+    .TFS_SeachedToursTable tbody .TFS_FqForward_Small {
+        background: #52A47B;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .TFS_SeachedToursTable tbody .TFS_Hq_No,
+    .TFS_SeachedToursTable tbody .TFS_FqTo_No,
+    .TFS_SeachedToursTable tbody .TFS_FqForward_No {
+        background: #e43d3c;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .TFS_SeachedToursTable tbody .TFS_Hq_Request,
+    .TFS_SeachedToursTable tbody .TFS_FqTo_Request,
+    .TFS_SeachedToursTable tbody .TFS_FqForward_Request {
+        background: #ff9900;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .TFS_SeachedToursTable tbody tr:hover {
+        /*background: #e9f3ff;*/
+        background: #fdf8f4;
+        -ms-opacity: 0.95;
+        opacity: 0.95;
+    }
+
+    .TFS_SeachedToursTable tbody td .HotelName {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .TFS_SeachedToursTable tbody td a.HotelName {
+        text-decoration: underline;
+    }
+
+    .TFS_SeachedToursTable tbody td span.HotelName {
+        color: #333;
+    }
+
+    .TFS_SeachedToursTable tbody .CellPrice .BasketBtn {
+        border: 0;
+        display: block;
+        margin: 8px 0;
+    }
+
+    .TFS_SeachedToursTable tbody .CellPrice a {
+        display: block;
+        margin-top: -1px;
+        color: #000;
+    }
+
+    .TFS_SeachedToursTable tbody .CellPrice .Price {
+        font-size: 16px;
+        color: #339800;
+        font-weight: bold;
+    }
+
+    .TFS_SeachedToursTable tbody td .TourName {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .TFS_SeachedToursTable tbody td a.TourName {
+        text-decoration: underline;
+    }
+
+    .TFS_SeachedToursTable tbody td .TourInfoImg {
+        cursor: pointer;
+        border: 0;
+        display: block;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .TFS_SeachedToursTable tbody td .AllPricesLnk {
+        border: 0;
+        display: block;
+        float: right;
+    }
+
+        .TFS_SeachedToursTable tbody td .AllPricesLnk span {
+            display: block;
+            float: right;
+            margin: 3px 5px 0;
+            color: #cc3366;
+            text-decoration: underline;
+        }
+/**********************  Стили результатов поиска конец     *************************/
+
+/* Фиксы для разных браузеров */
+/* без этого кода checkbox в мозила не прячется */
+/* BAG FOR MOZILLA */
+@-moz-document url-prefix() {
+    html body,
+    .TourSearchFilter {
+        font-family: Helvetica, Tahoma, Verdana, sans-serif;
+    }
+
+        .TourSearchFilter .TFS_RigthWrapper .TFS_ThirdBlock .TFS_NightsWrapper .OptionsListWrapper .OptionsList input {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+            line-height: 0 !important;
+            overflow: hidden !important;
+            letter-spacing: 0 !important;
+            font-size: 0 !important;
+            border: none !important;
+            -webkit-border-image: 0 !important;
+            -moz-border-image: 0 !important;
+            -ms-border-image: 0 !important;
+            -o-border-image: 0 !important;
+            border-image: 0 !important;
+        }
+}
+/* END BAG FOR MOZILLA */
+/******************************/

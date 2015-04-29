@@ -1,0 +1,16 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\QDSearch.General.dll.config
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\obj\Release\QDSearch.General.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\obj\Release\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\obj\Release\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Common.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Interfaces.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Redis.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Text.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Common.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Interfaces.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Redis.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\QDSearch.General\bin\Release\ServiceStack.Text.xml

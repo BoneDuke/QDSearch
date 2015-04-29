@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.5, 43.25" name="MtSearchDb">
+  <DataContextMoniker Name="/MtSearchDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3d360cab-6ce9-4825-b9b1-3317955eb780" absoluteBounds="9.75, 0.875, 2, 11.7705712890625">
+      <DataClassMoniker Name="/MtSearchDbDataContext/HotelDictionary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="522be69e-7ebf-421c-8815-e33dded7fe5e" absoluteBounds="9.765, 1.335, 1.9700000000000002, 11.2105712890625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06158885-1c97-407e-ae60-83fccf062c1b" absoluteBounds="2.75, 6.375, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/MtSearchDbDataContext/mwSpoDataTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="008cc157-3eb7-43a7-886e-0e03896248c1" absoluteBounds="2.765, 6.835, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf9b261a-8746-44d4-97a0-ddd9c9c7bd81" absoluteBounds="0.5, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/TP_TurDate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f9150b3-aa31-49e6-af95-3679f6be61cf" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2f9dfc9-0b06-47fc-9896-d0427a6e2f27" absoluteBounds="6.875, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/MtSearchDbDataContext/mwPriceDuration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="779541b6-7a66-4a99-9056-dc8797e08f35" absoluteBounds="6.89, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54219907-f26d-44d4-8e38-d40ce4701856" absoluteBounds="7.5, 3.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/mwPriceHotel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f1560db-cdaa-4dd8-be9a-d217de41e49f" absoluteBounds="7.515, 4.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="210103ef-dc82-4945-ab66-11ab0e6e6209" absoluteBounds="0.5, 3.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Pansion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da2f3509-8050-42f3-9ffe-e723f27ffcb0" absoluteBounds="0.515, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1040b5c-89e1-418d-a7cf-daa3fecd146b" absoluteBounds="5.125, 6.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Resort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="092e815a-60a3-48cb-afcd-b7f9f3b0d13a" absoluteBounds="5.14, 6.9600000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cca46603-be84-4820-b0a8-d79ad0fd773a" absoluteBounds="0.5, 6.25, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Rate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dba5454-38b0-4906-872e-fd063436df4a" absoluteBounds="0.515, 6.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b613329-19e4-4d0f-8f94-28f6528e193d" absoluteBounds="0.5, 14.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/MtSearchDbDataContext/RealCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21ddcaab-b840-4fc5-945a-7a2cde6e6856" absoluteBounds="0.515, 14.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(0.501537461538461 : 9.17470540364583); (0.125 : 9.55124286518429); (0.125 : 14.1234625384615); (0.501537461538462 : 14.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Rate/Rate_RealCourse" />
+      <nodes>
+        <classShapeMoniker Id="cca46603-be84-4820-b0a8-d79ad0fd773a" />
+        <classShapeMoniker Id="9b613329-19e4-4d0f-8f94-28f6528e193d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5cac4953-d28d-4128-9107-d6635f3addc8" absoluteBounds="2.75, 13, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/MtSearchDbDataContext/HotelRoom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd781d85-42c7-4b3b-8eff-e22a51c14218" absoluteBounds="2.765, 13.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="956fb3e6-bb7a-4748-9a52-24b38fcd92e1" absoluteBounds="2.875, 16.25, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d94c5ca7-30f0-45f7-bb4b-253f8457c1d5" absoluteBounds="2.89, 16.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.8125 : 16.25); (3.8125 : 15.9247054036458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Room/Room_HotelRoom" />
+      <nodes>
+        <classShapeMoniker Id="956fb3e6-bb7a-4748-9a52-24b38fcd92e1" />
+        <classShapeMoniker Id="5cac4953-d28d-4128-9107-d6635f3addc8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="23819783-4b00-4dac-8f30-178ec94935d5" absoluteBounds="0.5, 17.25, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Accmdmentype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1051f4da-ae09-4a21-a092-2ce78ea9fac6" absoluteBounds="0.515, 17.71, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 19.8758048502604); (2.78125 : 19.8758048502604); (2.78125 : 15.9247054036458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Accmdmentype/Accmdmentype_HotelRoom" />
+      <nodes>
+        <classShapeMoniker Id="23819783-4b00-4dac-8f30-178ec94935d5" />
+        <classShapeMoniker Id="5cac4953-d28d-4128-9107-d6635f3addc8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="662646ea-6c6b-48b3-af05-ffe10597d9f8" absoluteBounds="2.875, 20, 2, 3.1170068359375">
+      <DataClassMoniker Name="/MtSearchDbDataContext/RoomsCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9620df27-9096-4623-8a42-8644097e0ca3" absoluteBounds="2.89, 20.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 20); (3.875 : 19.8141097005208); (4.9375 : 19.8141097005208); (4.9375 : 14.4623527018229); (4.75 : 14.4623527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/RoomsCategory/RoomsCategory_HotelRoom" />
+      <nodes>
+        <classShapeMoniker Id="662646ea-6c6b-48b3-af05-ffe10597d9f8" />
+        <classShapeMoniker Id="5cac4953-d28d-4128-9107-d6635f3addc8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7fcee3b3-d140-4261-80d4-b1c90f60ac4e" absoluteBounds="5.25, 17.625, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/CityDictionary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e870fd95-a73f-4ed6-9cfe-f3cd8f3c8107" absoluteBounds="5.265, 18.085, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.25 : 19.5681062825521); (8.69791466666667 : 19.5681062825521 : JumpStart); (8.86458133333333 : 19.5681062825521 : JumpEnd); (9.54166666666667 : 19.5681062825521 : JumpStart); (9.70833333333333 : 19.5681062825521 : JumpEnd); (10.75 : 19.5681062825521); (10.75 : 12.6455712890625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/CityDictionary/CityDictionary_HotelDictionary" />
+      <nodes>
+        <classShapeMoniker Id="7fcee3b3-d140-4261-80d4-b1c90f60ac4e" />
+        <classShapeMoniker Id="3d360cab-6ce9-4825-b9b1-3317955eb780" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a6adf4df-2ba9-4954-b8b3-17494d3d84c7" absoluteBounds="5.375, 21.875, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b71eac79-d000-4196-b324-253920db05e3" absoluteBounds="5.39, 22.335, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92414d4d-350c-4e0b-8e0d-69054c018060" absoluteBounds="0.5, 23.375, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Charter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3db8b08-0768-42ea-aeb5-09fea2d3217a" absoluteBounds="0.515, 23.835, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="534dbcac-a66c-4052-ab36-34a40351c044" absoluteBounds="2.875, 23.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/AirSeason" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1505ff44-75ec-453e-a105-1b86196f35e0" absoluteBounds="2.89, 23.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 24.8662019856771); (2.875 : 24.8662019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Charter/Charter_AirSeason" />
+      <nodes>
+        <classShapeMoniker Id="92414d4d-350c-4e0b-8e0d-69054c018060" />
+        <classShapeMoniker Id="534dbcac-a66c-4052-ab36-34a40351c044" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9e5cd330-bc73-4374-9480-dcdc5a1e73cb" absoluteBounds="2.875, 26.625, 2, 7.3476383463541657">
+      <DataClassMoniker Name="/MtSearchDbDataContext/tbl_Cost" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc495737-a0e8-4062-aaf6-c1ff4bda613a" absoluteBounds="2.89, 27.085, 1.9700000000000002, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9dd4f4a-51e6-4ec1-b90a-98bf16f2beb8" absoluteBounds="0.5, 28.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/StopAvia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69a1bf9d-5890-4aae-8ebf-9d2b470445f8" absoluteBounds="0.515, 28.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46370202-7ae3-44fe-8aaa-5d134dc71c50" absoluteBounds="5.375, 26.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/Quota" />
+      <nestedChildShapes>
+        <elementListCompartment Id="486af25c-6567-45e1-afe3-0f8fd8e4a76a" absoluteBounds="5.39, 27.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="effebc44-775d-41a0-9ada-1bb36e0d1c95" absoluteBounds="5.5, 29.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/MtSearchDbDataContext/QuotaObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4a023fd-8c53-4a73-8560-7ed39d509d27" absoluteBounds="5.515, 29.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.4375 : 28.7804996744792); (6.4375 : 29.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Quota/Quota_QuotaObject" />
+      <nodes>
+        <classShapeMoniker Id="46370202-7ae3-44fe-8aaa-5d134dc71c50" />
+        <classShapeMoniker Id="effebc44-775d-41a0-9ada-1bb36e0d1c95" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="78cdab67-1bbf-468e-8f54-5b59da0d14d7" absoluteBounds="8.25, 26.625, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/MtSearchDbDataContext/QuotaDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e596afc-52d6-4852-a96c-98cc57e8a289" absoluteBounds="8.265, 27.085, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.375 : 27.7027498372396); (8.25 : 27.7027498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Quota/Quota_QuotaDetail" />
+      <nodes>
+        <classShapeMoniker Id="46370202-7ae3-44fe-8aaa-5d134dc71c50" />
+        <classShapeMoniker Id="78cdab67-1bbf-468e-8f54-5b59da0d14d7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6ebc90e7-985f-4a83-afd3-60a3d8ef5892" absoluteBounds="11.25, 26.75, 2, 4.8477197265625">
+      <DataClassMoniker Name="/MtSearchDbDataContext/QuotaPart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="080ff483-d0f7-40d3-81b7-f965a0ed895b" absoluteBounds="11.265, 27.21, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.25 : 28.5344555664063); (11.25 : 28.5344555664063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/QuotaDetail/QuotaDetail_QuotaPart" />
+      <nodes>
+        <classShapeMoniker Id="78cdab67-1bbf-468e-8f54-5b59da0d14d7" />
+        <classShapeMoniker Id="6ebc90e7-985f-4a83-afd3-60a3d8ef5892" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3dbd0c62-2c22-4060-85d7-434ed95ba94d" absoluteBounds="8.25, 31.125, 2, 3.1170068359375">
+      <DataClassMoniker Name="/MtSearchDbDataContext/StopSale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ae89bcc-11ba-4e53-ad83-67f37dccbe3c" absoluteBounds="8.265, 31.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 30.3189111328125); (9.25 : 31.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/QuotaDetail/QuotaDetail_StopSale" />
+      <nodes>
+        <classShapeMoniker Id="78cdab67-1bbf-468e-8f54-5b59da0d14d7" />
+        <classShapeMoniker Id="3dbd0c62-2c22-4060-85d7-434ed95ba94d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 31.3950512695313); (8.25 : 31.3950512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/QuotaObject/QuotaObject_StopSale" />
+      <nodes>
+        <classShapeMoniker Id="effebc44-775d-41a0-9ada-1bb36e0d1c95" />
+        <classShapeMoniker Id="3dbd0c62-2c22-4060-85d7-434ed95ba94d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b5c3a31c-cf9c-4ba0-8e7c-e241e5cb6cb4" absoluteBounds="8, 21.125, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/MtSearchDbDataContext/tbl_Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="306e95c3-7104-466e-b64c-4063680d537c" absoluteBounds="8.015, 21.585, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8 : 21.6931062825521); (5.15625 : 21.6931062825521); (5.15625 : 8.4631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/tbl_Country/tbl_Country_Resort" />
+      <nodes>
+        <classShapeMoniker Id="b5c3a31c-cf9c-4ba0-8e7c-e241e5cb6cb4" />
+        <classShapeMoniker Id="f1040b5c-89e1-418d-a7cf-daa3fecd146b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.781248 : 21.125); (8.781248 : 18.5653006412761); (7.25 : 18.5653006412761)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/tbl_Country/tbl_Country_CityDictionary" />
+      <nodes>
+        <classShapeMoniker Id="b5c3a31c-cf9c-4ba0-8e7c-e241e5cb6cb4" />
+        <classShapeMoniker Id="7fcee3b3-d140-4261-80d4-b1c90f60ac4e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 7.71235270182292); (2.6875 : 7.71235270182292); (2.6875 : 12.8236311848958); (4.85416666666667 : 12.8236311848958 : JumpStart); (5.02083333333333 : 12.8236311848958 : JumpEnd); (5.07291666666667 : 12.8236311848958 : JumpStart); (5.23958333333333 : 12.8236311848958 : JumpEnd); (9 : 12.8236311848958); (9 : 21.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/Rate/Rate_tbl_Country" />
+      <nodes>
+        <classShapeMoniker Id="cca46603-be84-4820-b0a8-d79ad0fd773a" />
+        <classShapeMoniker Id="b5c3a31c-cf9c-4ba0-8e7c-e241e5cb6cb4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ff714f41-61d2-4d19-8014-893c44012fe8" absoluteBounds="0.5, 30.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/MtSearchDbDataContext/TipTur" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7ef9301-5e75-4e56-9d5e-4d5d5c725d82" absoluteBounds="0.515, 31.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.0560171875 : 32.5881982421875); (1.0560171875 : 32.7131982421875); (1.5 : 32.7131982421875); (1.5 : 32.5881982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/TipTur/TipTur_TipTur" />
+      <nodes>
+        <classShapeMoniker Id="ff714f41-61d2-4d19-8014-893c44012fe8" />
+        <classShapeMoniker Id="ff714f41-61d2-4d19-8014-893c44012fe8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="493c3957-ddf4-47ac-824b-d7f33c76ab04" absoluteBounds="0.5, 9.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/MtSearchDbDataContext/mwReplQueue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8905d8ec-c185-4370-96e1-b9d5f983acf2" absoluteBounds="0.515, 9.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9443f33c-5612-467e-9500-320bb9510158" absoluteBounds="0.5, 33.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/MtSearchDbDataContext/AirService" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36760f34-b011-492d-bd35-9a04dabeac0b" absoluteBounds="0.515, 33.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01f5203c-da9c-409e-bf23-74cc25ef6443" absoluteBounds="3.5, 0.625, 2, 5.4246240234375">
+      <DataClassMoniker Name="/MtSearchDbDataContext/TP_Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="785dc5c1-493f-445b-939b-7844eb38a4c9" absoluteBounds="3.515, 1.085, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 6.0496240234375); (4.125 : 6.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/TP_Tour/TP_Tour_mwSpoDataTable" />
+      <nodes>
+        <classShapeMoniker Id="01f5203c-da9c-409e-bf23-74cc25ef6443" />
+        <classShapeMoniker Id="06158885-1c97-407e-ae60-83fccf062c1b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 1.64024983723958); (2.5 : 1.64024983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/TP_Tour/TP_Tour_TP_TurDate" />
+      <nodes>
+        <classShapeMoniker Id="01f5203c-da9c-409e-bf23-74cc25ef6443" />
+        <classShapeMoniker Id="cf9b261a-8746-44d4-97a0-ddd9c9c7bd81" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.73159912109375); (6.875 : 1.73159912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/TP_Tour/TP_Tour_mwPriceDuration" />
+      <nodes>
+        <classShapeMoniker Id="01f5203c-da9c-409e-bf23-74cc25ef6443" />
+        <classShapeMoniker Id="d2f9dfc9-0b06-47fc-9896-d0427a6e2f27" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.89981201171875); (7.5 : 4.89981201171875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/TP_Tour/TP_Tour_mwPriceHotel" />
+      <nodes>
+        <classShapeMoniker Id="01f5203c-da9c-409e-bf23-74cc25ef6443" />
+        <classShapeMoniker Id="54219907-f26d-44d4-8e38-d40ce4701856" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.625 : 21.125); (9.625 : 3.23159912109375); (5.5 : 3.23159912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/tbl_Country/tbl_Country_TP_Tour" />
+      <nodes>
+        <classShapeMoniker Id="b5c3a31c-cf9c-4ba0-8e7c-e241e5cb6cb4" />
+        <classShapeMoniker Id="01f5203c-da9c-409e-bf23-74cc25ef6443" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3275458b-03a8-4c06-99f0-7a1c5617b1c1" absoluteBounds="3.375, 34.25, 2, 8.6937483723958326">
+      <DataClassMoniker Name="/MtSearchDbDataContext/tbl_TurList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3254320-df82-4e04-ba15-f6856c59c1fa" absoluteBounds="3.39, 34.71, 1.9700000000000002, 8.1337483723958321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 34.25); (4.375 : 34.0351383463542); (4.9375 : 34.0351383463542); (4.9375 : 6.1121240234375); (5.5625 : 6.1121240234375); (5.5625 : 3.33731201171875); (5.5 : 3.33731201171875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/tbl_TurList/tbl_TurList_TP_Tour" />
+      <nodes>
+        <classShapeMoniker Id="3275458b-03a8-4c06-99f0-7a1c5617b1c1" />
+        <classShapeMoniker Id="01f5203c-da9c-409e-bf23-74cc25ef6443" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 32.5881982421875); (1.5 : 32.875); (2.625 : 32.875); (2.625 : 34.2226383463542); (2.75 : 34.2226383463542); (2.75 : 38.5968741861979); (3.375 : 38.5968741861979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MtSearchDbDataContext/TipTur/TipTur_tbl_TurList" />
+      <nodes>
+        <classShapeMoniker Id="ff714f41-61d2-4d19-8014-893c44012fe8" />
+        <classShapeMoniker Id="3275458b-03a8-4c06-99f0-7a1c5617b1c1" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

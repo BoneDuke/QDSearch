@@ -1,0 +1,97 @@
+﻿html body {
+    font-family: Calibri, Helvetica, Tahoma, Verdana, sans-serif;
+    text-align: left;
+    background: #f9f6e0;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 20px;
+}
+
+.TFS_TourDescWrapper {
+    margin: 0;
+}
+
+    .TFS_TourDescWrapper .Slvx_TourDesc .red {
+        color: red;
+    }
+
+    .TFS_TourDescWrapper .Slvx_TourDesc h3 {
+        display: block;
+        font-family: Georgia;
+        font-weight: normal;
+        font-size: 16px;
+        font-style: italic;
+        padding: 10px 0 5px 0;
+        margin: 0;
+        color: #006699;
+        overflow: hidden;
+    }
+
+    .TFS_TourDescWrapper .Slvx_TourDesc strong {
+        font-weight: bold;
+    }
+
+    .TFS_TourDescWrapper .InfoTbl, .tbl-content-horizontal {
+        border: 1px solid #f5dcc9;
+        background-color: #fff;
+        width: 100%;
+    }
+
+        .TFS_TourDescWrapper .InfoTbl thead {
+            background: #f5dcc9;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl th {
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            text-align: left;
+            vertical-align: top;
+            padding: 5px;
+        }
+
+            .TFS_TourDescWrapper .InfoTbl th.last {
+                border-right: 1px solid #f5dcc9;
+            }
+
+        .TFS_TourDescWrapper .InfoTbl .centered {
+            text-align: center;
+        }
+
+
+        .TFS_TourDescWrapper .InfoTbl th.fio, .InfoTbl th.image {
+            width: 260px;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl th.date {
+            width: 150px;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl th.price, .InfoTbl th.price-last {
+            width: 100px;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl th.price-last {
+            border-right: 1px solid #f5dcc9;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl td {
+            border-bottom: 1px solid #f5dcc9;
+            border-right: 1px solid #f5dcc9;
+            text-align: left;
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl .subheader {
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #f5dcc9;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #ccc;
+            padding-top: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .TFS_TourDescWrapper .InfoTbl tr:hover {
+            background: #fdefdf;
+        }

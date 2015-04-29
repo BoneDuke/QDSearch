@@ -1,0 +1,10 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\Seemplexity.Extensions.Questionnaire.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\Seemplexity.Extensions.Questionnaire.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\QDSearch.General.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\bin\Debug\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\obj\Debug\Seemplexity.Extensions.Questionnaire.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\obj\Debug\Seemplexity.Extensions.Questionnaire.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMExtensions.Questionnaire\obj\Debug\Seemplexity.Extensions.Questionnaire.pdb

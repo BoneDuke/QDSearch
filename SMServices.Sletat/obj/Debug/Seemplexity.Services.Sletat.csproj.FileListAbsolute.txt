@@ -1,0 +1,10 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\Seemplexity.Services.Sletat.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\Seemplexity.Services.Sletat.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\QDSearch.General.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Debug\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\obj\Debug\Seemplexity.Services.Sletat.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\obj\Debug\Seemplexity.Services.Sletat.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\obj\Debug\Seemplexity.Services.Sletat.pdb

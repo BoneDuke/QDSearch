@@ -1,0 +1,17 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\SMServices.Sletat.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\SMServices.Sletat.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\obj\Release\SMServices.Sletat.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\obj\Release\SMServices.Sletat.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\obj\Release\SMServices.Sletat.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Redis.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Text.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Interfaces.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Common.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Redis.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Text.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Interfaces.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\SMServices.Sletat\bin\Release\ServiceStack.Common.xml

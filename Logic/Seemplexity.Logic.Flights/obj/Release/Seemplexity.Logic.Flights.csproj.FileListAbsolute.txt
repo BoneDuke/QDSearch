@@ -1,0 +1,17 @@
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\Seemplexity.Logic.Flights.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\Seemplexity.Logic.Flights.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\NLog.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\NLog.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\obj\Release\Seemplexity.Logic.Flights.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\obj\Release\Seemplexity.Logic.Flights.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\obj\Release\Seemplexity.Logic.Flights.pdb
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Redis.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Text.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Interfaces.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Common.dll
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Redis.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Text.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Interfaces.xml
+C:\Programming\Seemplexity\QDSearchMultiHotels\Logic\Seemplexity.Logic.Flights\bin\Release\ServiceStack.Common.xml

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05441D35-1EE8-4401-91D9-EDCD1FD66752}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QDSearch</RootNamespace>
+    <AssemblyName>QDSearch.General</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\QDSearch.General.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.2.1.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.69.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.9.69\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.9.69\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=3.9.69.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Redis.3.9.69\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.69.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.3.9.69\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\CacheModes.cs" />
+    <Compile Include="Caching\ExpirationModes.cs" />
+    <Compile Include="Configuration\CacheElement.cs" />
+    <Compile Include="Configuration\CharterClassesCollection.cs" />
+    <Compile Include="Configuration\ExceptionHandlingElement.cs" />
+    <Compile Include="Configuration\NameKeysElement.cs" />
+    <Compile Include="Configuration\QdSearchSection.cs" />
+    <Compile Include="Configuration\TourFiltersElement.cs" />
+    <Compile Include="Configuration\ViewStateElement.cs" />
+    <Compile Include="DataModel\CacheKeyObject.cs" />
+    <Compile Include="DataModel\FlightCalculatedInfo.cs" />
+    <Compile Include="DataModel\FlightDirection.cs" />
+    <Compile Include="DataModel\FlightPlainInfo.cs" />
+    <Compile Include="DataModel\FlightTicketState.cs" />
+    <Compile Include="DataModel\Hotel.cs" />
+    <Compile Include="DataModel\HotelPansionFilterClass.cs" />
+    <Compile Include="DataModel\HotelRoomNames.cs" />
+    <Compile Include="DataModel\HotelSmallClass.cs" />
+    <Compile Include="DataModel\MegatecTables.cs" />
+    <Compile Include="DataModel\PagingCommandType.cs" />
+    <Compile Include="DataModel\PriceForType.cs" />
+    <Compile Include="DataModel\CacheKeyDirection.cs" />
+    <Compile Include="DataModel\PriceValue.cs" />
+    <Compile Include="DataModel\QuotaPlain.cs" />
+    <Compile Include="DataModel\QuotesStates.cs" />
+    <Compile Include="DataModel\SearchSortingColumn.cs" />
+    <Compile Include="DataModel\ServiceAttribute.cs" />
+    <Compile Include="DataModel\ServiceClasses.cs" />
+    <Compile Include="DataModel\DupUserAttributes.cs" />
+    <Compile Include="Extensions\AccomodationsExtension.cs" />
+    <Compile Include="Extensions\AirlinesExtension.cs" />
+    <Compile Include="Extensions\AirSeasonExtension.cs" />
+    <Compile Include="Extensions\AirServicesExtension.cs" />
+    <Compile Include="Extensions\CharterExtension.cs" />
+    <Compile Include="Extensions\CitiesExtension.cs" />
+    <Compile Include="Extensions\CostsExtension.cs" />
+    <Compile Include="Extensions\CountriesExtension.cs" />
+    <Compile Include="Extensions\DescriptionsExtension.cs" />
+    <Compile Include="Extensions\HotelCategoriesExtension.cs" />
+    <Compile Include="Extensions\HotelRoomsExtension.cs" />
+    <Compile Include="Extensions\HotelsExtension.cs" />
+    <Compile Include="Extensions\PansionsExtension.cs" />
+    <Compile Include="Extensions\QuestionnaireFieldCasesExtension.cs" />
+    <Compile Include="Extensions\QuestionnaireFieldsExtension.cs" />
+    <Compile Include="Extensions\QuestionnairesExtension.cs" />
+    <Compile Include="Extensions\QuestionnaireTouristCasesExtension.cs" />
+    <Compile Include="Extensions\QuotaDetailsExtension.cs" />
+    <Compile Include="Extensions\QuotaObjectsExtension.cs" />
+    <Compile Include="Extensions\QuotaPartsExtension.cs" />
+    <Compile Include="Extensions\QuotasExtension.cs" />
+    <Compile Include="Extensions\RatesExtension.cs" />
+    <Compile Include="DataModel\SearchResult.cs" />
+    <Compile Include="DataModel\SearchResultItem.cs" />
+    <Compile Include="DataModel\CourseClasses.cs" />
+    <Compile Include="Extensions\RealCoursesExtension.cs" />
+    <Compile Include="Extensions\ResortsExtension.cs" />
+    <Compile Include="Extensions\RoomCategoriesExtension.cs" />
+    <Compile Include="Extensions\RoomsExtension.cs" />
+    <Compile Include="Extensions\ServicesExtension.cs" />
+    <Compile Include="Extensions\StopAviaExtension.cs" />
+    <Compile Include="Extensions\StopSalesExtension.cs" />
+    <Compile Include="Extensions\TipToursExtension.cs" />
+    <Compile Include="Extensions\TouristsExtension.cs" />
+    <Compile Include="Extensions\TPPricesExtension.cs" />
+    <Compile Include="Extensions\TPToursExtension.cs" />
+    <Compile Include="Extensions\TurDatesExtension.cs" />
+    <Compile Include="Extensions\TurListsExtension.cs" />
+    <Compile Include="Extensions\TurServicesExtension.cs" />
+    <Compile Include="Extensions\DupUsersExtension.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Helpers\CacheHelper.cs" />
+    <Compile Include="Helpers\Converters.cs" />
+    <Compile Include="Helpers\Cryptography\CryptoManager.cs" />
+    <Compile Include="Helpers\DataReaderExtensions.cs" />
+    <Compile Include="Helpers\Cryptography\EncryptionHelper.cs" />
+    <Compile Include="Helpers\ExceptionHandling.cs" />
+    <Compile Include="Helpers\Cryptography\PrivateKeyManager.cs" />
+    <Compile Include="Helpers\Serializer.cs" />
+    <Compile Include="Helpers\Cryptography\TripleDESEncryption.cs" />
+    <Compile Include="Helpers\Web.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CheckQuotaMethods.cs" />
+    <Compile Include="Repository\MtMain\MtMainDb.cs">
+      <DependentUpon>MtMainDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MtMain\MtMainDbDataContext.cs" />
+    <Compile Include="Repository\MtMain\MtMainDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MtMainDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MtSearch\GetFilterMethods.cs" />
+    <Compile Include="Repository\MtSearch\MtSearchDb.cs">
+      <DependentUpon>MtSearchDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MtSearch\MtSearchDbDataContext.cs" />
+    <Compile Include="Repository\MtSearch\MtSearchDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MtSearchDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MtSearch\PriceSearchMethods.cs" />
+    <Compile Include="Repository\SftWeb\SftWebDb.cs">
+      <DependentUpon>SftWebDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\SftWeb\SftWebDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SftWebDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\SftWeb\SftWebDbDataContext.cs" />
+    <Compile Include="ViewState\IStsStatePersistedPage.cs" />
+    <Compile Include="ViewState\StsPageStatePageAdapter.cs" />
+    <Compile Include="ViewState\StsSqlPageStatePersister.cs" />
+    <Compile Include="ViewState\StsStateKeeperHandler.cs" />
+    <Compile Include="ViewState\StsViewState.cs" />
+    <Compile Include="WebControls\StsStateKeeper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Repository\SftWeb\SftWebDb.dbml.layout">
+      <DependentUpon>SftWebDb.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Repository\MtMain\MtMainDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MtMainDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Repository\MtSearch\MtSearchDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MtSearchDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Repository\SftWeb\SftWebDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SftWebDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Repository\MtMain\MtMainDb.dbml.layout">
+      <DependentUpon>MtMainDb.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Repository\MtSearch\MtSearchDb.dbml.layout">
+      <DependentUpon>MtSearchDb.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

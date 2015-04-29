@@ -1,0 +1,13 @@
+﻿<!--
+    Существующие определения обозревателя можно найти в каталоге
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter
+          controlType="System.Web.UI.Page"
+          adapterType="QDSearch.ViewState.StsPageStatePageAdapter" />
+    </controlAdapters>
+  </browser>
+</browsers>

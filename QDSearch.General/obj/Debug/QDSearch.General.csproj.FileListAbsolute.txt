@@ -1,0 +1,9 @@
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\bin\Debug\QDSearch.General.dll.config
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\bin\Debug\QDSearch.General.XML
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\bin\Debug\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\bin\Debug\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\obj\Debug\QDSearch.General.dll
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\obj\Debug\QDSearch.General.pdb
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\obj\Debug\QDSearch.General.csprojResolveAssemblyReference.cache
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\bin\Debug\NLog.dll
+C:\Programming\Seemplexity\QDSearch\QDSearch.General\bin\Debug\NLog.xml

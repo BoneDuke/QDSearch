@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SftWebPsDb" Class="SftWebDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=server2.solvex.local;Initial Catalog=SftWebPsDB;User ID=qdsearch;MultipleActiveResultSets=True;Connect Timeout=60;Application Name=qdsearch2" SettingsObjectName="QDSearch.Properties.Settings" SettingsPropertyName="SftWebPsDbConnectionString" Provider="System.Data.SqlClient" />
+</Database>

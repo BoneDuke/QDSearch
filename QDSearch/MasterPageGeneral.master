@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageGeneral.master.cs" Inherits="MasterPageGeneral" EnableViewState="true" ViewStateMode="Enabled" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Система бронировния туров ООО "Солвекс-Турне."</title>
+    <link id="LnkResetStyle" rel="stylesheet" runat="server" href="~/styles/reset.css" />
+    <link id="LnkGeneralStyle" rel="stylesheet" runat="server" href="~/styles/general.css" />
+    <link id="LnkHeaderStyle" rel="stylesheet" runat="server" href="~/styles/header/solvexHeader.css" />
+    <asp:ContentPlaceHolder ID="CphHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="description" content="The description of my page" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9" />
+    <meta name="author" content="Aleksey Pashkov & Co." />
+    <%--Google Analytics--%>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21163026-1']);
+        _gaq.push(['_setDomainName', 'solvex.travel']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <%--Google Analytics--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--В релизе необходимо разкоментировать--%>
+        <telerik:RadScriptManager ID="RsManager" runat="server" EnableEmbeddedjQuery="True">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+                <asp:ScriptReference Path="~/scripts/general.js" />
+            </Scripts>
+        </telerik:RadScriptManager>
+        <%--В релизе необходимо закоментировать--%>
+        <%--<asp:ScriptManager ID="SManager" runat="server">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+                <asp:ScriptReference Path="~/scripts/general.js" />
+            </Scripts>
+        </asp:ScriptManager>--%>
+        <div>
+            <div class="slvx_root_menu">
+                <a href="http://www.solvex.travel" class="menu_item first_item"><span>главная</span></a>
+                <a href="http://www.solvex.travel/about.aspx" class="menu_item"><span>о компании</span></a>
+                <a href="http://www.solvex.travel/news-categories.aspx" class="menu_item"><span>новости</span></a>
+                <a href="http://www.solvex.travel/agencies.aspx" class="menu_item"><span>агентствам</span></a>
+                <a href="http://sft.solvex.travel" class="menu_item" style="color: #b4e6ff; text-decoration: underline;"><span>поиск туров</span></a>
+                <a href="http://online.solvex.travel/Search.aspx" class="menu_item"><span>бронирование авиабилетов</span></a>
+                <a href="http://www.solvex.travel/photos.aspx" class="menu_item last_item"><span>фотогалерея</span></a>
+            </div>
+            <div id="_headerBlock" class="HeaderBlock">
+                <a id="_logoLinkHeader" href="http://www.solvex.travel/" class="HeaderLogo">
+                    <img id="_logoImgHeader" alt="Логотип OOO Солвекс-Турне" width="288px" height="155px"
+                        src="./styles/header/solvex-logotype.jpg" /></a>
+                <div class="HeaderCenterImg">
+                </div>
+                <img id="_headerText" runat="server" alt="Когда целого мира мало..." width="238" height="67"
+                    src="~/styles/header/header-text.png" />
+                <div class="HeaderRightConer">
+                </div>
+                <div class="HeaderContacts">
+                    <i>Для частных лиц:</i><br />
+                    (812) <strong>325 03 32, 320 46 70</strong><br />
+                    <i>Для агентств:</i><br />
+                    (812) <strong>325 27 03, 777 11 21</strong><br />
+                    <i>Где купить:</i><br />
+                    <a href="http://www.solvex.travel/about/contact.aspx">контакты<br />
+                        уполномоченных<br />
+                        агентств</a>
+                </div>
+                <div class="HeaderBottom">
+                </div>
+            </div>
+            <div class="TFS_MenuWrapper">
+                <a runat="server" href='~/'>Начало</a>
+                <a href='http://online.solvex.travel/orderlist.aspx' style="color: #cc0000">Вход в личный кабинет</a>
+                <a href='http://online.solvex.travel/orderlist.aspx'>Список заявок</a>
+                <a href='http://online.solvex.travel/Search.aspx'>Бронирование авиабилетов</a>
+            </div>
+            <asp:ContentPlaceHolder ID="CphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
