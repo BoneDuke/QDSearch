@@ -1,4 +1,5 @@
 ﻿<%@ Application Language="C#" %>
+<%@ Import Namespace="System.Threading.Tasks" %>
 <%@ Import Namespace="QDSearch" %>
 <%@ Import Namespace="QDSearch.Helpers" %>
 <%@ Import Namespace="QDSearch.Repository.MtSearch" %>
@@ -12,11 +13,15 @@
         {
             try
             {
-                GetFilterMethods.ClearOldDirectionCacheDelegate del1 = GetFilterMethods.ClearOldDrectionCache;
-                del1.BeginInvoke(null, null);
+                var factory = new TaskFactory();
+                factory.StartNew(GetFilterMethods.ClearOldDrectionCache);
+                factory.StartNew(GetFilterMethods.ClearOldObjectCache);
+                
+                //GetFilterMethods.ClearOldDirectionCacheDelegate del1 = GetFilterMethods.ClearOldDrectionCache;
+                //del1.BeginInvoke(null, null);
 
-                GetFilterMethods.ClearOldObjectCacheDelegate del2 = GetFilterMethods.ClearOldObjectCache;
-                del2.BeginInvoke(null, null);
+                //GetFilterMethods.ClearOldObjectCacheDelegate del2 = GetFilterMethods.ClearOldObjectCache;
+                //del2.BeginInvoke(null, null);
 
                 SqlCacheDependencyAdmin.EnableNotifications(Globals.Settings.MtMainDbConnectionString);
                 SqlCacheDependencyAdmin.EnableTableForNotifications(Globals.Settings.MtMainDbConnectionString, CacheHelper.SqlCacheDependencyTablesMainDb);

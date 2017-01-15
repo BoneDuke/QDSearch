@@ -110,7 +110,7 @@ deallocate dirCursor
 
 declare @sql varchar(max), @tableName varchar(100)
 declare dirCursor cursor local fast_forward for
-select name from sys.objects where type like 'U' and name like 'mwPriceDataTable[_]%'
+select name from sys.objects where type like 'U' and name like 'mwPriceDataTable%'
 
 open dirCursor
 fetch dirCursor into @tableName
@@ -188,10 +188,10 @@ deallocate dirCursor
 
 
 
-DROP INDEX [ix_filter_1] ON [dbo].[mwPriceDataTable]
+DROP INDEX [ix_filter_1_1] ON [dbo].[mwPriceDataTable]
 GO
 
-CREATE NONCLUSTERED INDEX [ix_filter_1] ON [dbo].[mwPriceDataTable]
+CREATE NONCLUSTERED INDEX [ix_filter_1_1] ON [dbo].[mwPriceDataTable]
 (
 	[pt_tourkey] ASC,
 	[pt_tourdate] ASC,
@@ -211,34 +211,34 @@ INCLUDE ( 	[pt_nights],
 GO
 
 
-DROP INDEX [ix_sm_search_new_1] ON [dbo].[mwPriceDataTable]
+DROP INDEX [ix_sm_search_new_1_1] ON [dbo].[mwPriceDataTable]
 GO
 
-CREATE NONCLUSTERED INDEX [ix_sm_search_new_1] ON [dbo].[mwPriceDataTable] ([pt_mainplaces],[pt_addplaces],[pt_tourdate],[pt_nights],[pt_ctkeyfrom],[pt_tourkey],[pt_pnkey],[pt_isenabled],[pt_tourvalid])
+CREATE NONCLUSTERED INDEX [ix_sm_search_new_1_1] ON [dbo].[mwPriceDataTable] ([pt_mainplaces],[pt_addplaces],[pt_tourdate],[pt_nights],[pt_ctkeyfrom],[pt_tourkey],[pt_pnkey],[pt_isenabled],[pt_tourvalid])
 INCLUDE ([pt_days],[pt_cnkey],[pt_ctkeyto],[pt_pricekey],[pt_price],[pt_hdkey],[pt_hdpartnerkey],[pt_hdstars],[pt_hrkey],[pt_rate],[pt_chkey],[pt_chbackkey],[pt_hdday],[pt_hdnights],[pt_chday],[pt_chpkkey],[pt_chprkey],[pt_chbackday],[pt_chbackpkkey],[pt_chbackprkey],[pt_hotelkeys],[pt_key],[pt_topricefor],[pt_hddetails],[pt_directFlightAttribute],[pt_backFlightAttribute])
 
 -------------------------------------------------------------------------
 
-DROP INDEX [ix_sm_filter_new_1] ON [dbo].[mwSpoDataTable]
+DROP INDEX [ix_sm_filter_new_1_1] ON [dbo].[mwSpoDataTable]
 GO
 
-CREATE NONCLUSTERED INDEX [ix_sm_filter_new_1]
+CREATE NONCLUSTERED INDEX [ix_sm_filter_new_1_1]
 ON [dbo].[mwSpoDataTable] ([sd_isenabled],[sd_tourvalid])
 INCLUDE ([sd_cnkey],[sd_hotelkeys],[sd_cnkeys],[sd_ctkeyfrom],[sd_tourtype],[sd_ctkey])
 GO
 
-DROP INDEX [ix_sm_filter_new_2] ON [dbo].[mwSpoDataTable]
+DROP INDEX [ix_sm_filter_new_2_1] ON [dbo].[mwSpoDataTable]
 GO
 
-CREATE NONCLUSTERED INDEX [ix_sm_filter_new_2]
+CREATE NONCLUSTERED INDEX [ix_sm_filter_new_2_1]
 ON [dbo].[mwSpoDataTable] ([sd_ctkeyfrom],[sd_tourtype],[sd_isenabled],[sd_tourvalid])
 INCLUDE ([sd_ctkey],[sd_hotelkeys],[sd_cnkey],[sd_cnkeys],[sd_ctkeys],[sd_tourkey])
 GO
 
-DROP INDEX [ix_sm_filter_new_3] ON [dbo].[mwSpoDataTable]
+DROP INDEX [ix_sm_filter_new_3_1] ON [dbo].[mwSpoDataTable]
 GO
 
-CREATE NONCLUSTERED INDEX [ix_sm_filter_new_3]
+CREATE NONCLUSTERED INDEX [ix_sm_filter_new_3_1]
 ON [dbo].[mwSpoDataTable] ([sd_cnkey],[sd_ctkeyfrom],[sd_tourtype],[sd_isenabled],[sd_tourvalid])
 INCLUDE ([sd_ctkey],[sd_hotelkeys])
 GO

@@ -178,7 +178,7 @@ namespace Controls
                             si.FilterRateCode, true),
                         GetTourDetailsHtml(si.TourHasDescription, si.TourKey));
                     sb = GetHotelQuotasHtml(sb, si.Hotels[i].QuotaState, 0);
-                    sb = GetAviaQuotasHtml(sb, hNumber, si.DirectFlightsInfo.ToDictionary(d => d.Key, d => d.Value.QuotaState), si.BackFlightsInfo.ToDictionary(d => d.Key, d => d.Value.QuotaState), si.FlightCityKeyFrom, si.FlightCityKeyTo,
+                    sb = GetAviaQuotasHtml(sb, hNumber, si.DirectFlightsInfo, si.BackFlightsInfo, si.FlightCityKeyFrom, si.FlightCityKeyTo,
                         si.Date, si.DateTourEnd);
                     sb.Append("</tr>");
                     continue;
@@ -222,7 +222,7 @@ namespace Controls
                 GetTourDetailsHtml(si.TourHasDescription, si.TourKey));
             sb = GetHotelQuotasHtml(sb, si.Hotels[0].QuotaState, 0);
             //todo: вынести список классов авиоперелетов в конфиг
-            sb = GetAviaQuotasHtml(sb, 0, si.DirectFlightsInfo.ToDictionary(d => d.Key, d => d.Value.QuotaState), si.BackFlightsInfo.ToDictionary(d => d.Key, d => d.Value.QuotaState), si.FlightCityKeyFrom, si.FlightCityKeyTo,
+            sb = GetAviaQuotasHtml(sb, 0, si.DirectFlightsInfo, si.BackFlightsInfo, si.FlightCityKeyFrom, si.FlightCityKeyTo,
                 si.Date, si.DateTourEnd);
             return sb.AppendFormat("</tr>");
         }
@@ -274,17 +274,17 @@ namespace Controls
             return priceHtml.ToString();
         }
 
-        public static string GetComplexAspxLinkHtml(int cityKeyFrom, int countryKeyTo, int tourKey, int hotelKey, DateTime dateFrom, string filterRateCode, bool inNewWindow)
+        public static string GetComplexAspxLinkHtml(int? cityKeyFrom, int countryKeyTo, int tourKey, int hotelKey, DateTime dateFrom, string filterRateCode, bool inNewWindow)
         {
             //todo: вынести адрес complex.aspx в конфиг
             //todo: название все цены вынести в конфиг
             return inNewWindow
                 ? String.Format(
-                    @"<a class='AllPricesLnk' target='_blank' href='http://online.solvex.travel/pricelist/complex.aspx?departFrom={0}&country={1}&tour={2}&hotel={3}&dateFrom={4:yyyy-MM-dd}&rate={5}&ratesSwitcher=1'><img src='./styles/images/all-prices.png' alt='все цены'/></a>",
-                    cityKeyFrom, countryKeyTo, tourKey, hotelKey, dateFrom, filterRateCode)
+                    @"<a class='AllPricesLnk' target='_blank' href='http://online.solvex.travel/pricelist/complex.aspx?{0}country={1}&tour={2}&hotel={3}&dateFrom={4:yyyy-MM-dd}&rate={5}&ratesSwitcher=1'><img src='./styles/images/all-prices.png' alt='все цены'/></a>",
+                    cityKeyFrom.HasValue ? String.Format("departFrom={0}&",cityKeyFrom) : String.Empty, countryKeyTo, tourKey, hotelKey, dateFrom, filterRateCode)
                 : String.Format(
-                    @"<a class='AllPricesLnk' href='http://online.solvex.travel/pricelist/complex.aspx?departFrom={0}&country={1}&tour={2}&hotel={3}&dateFrom={4:yyyy-MM-dd}&rate={5}&ratesSwitcher=1'><img src='./styles/images/all-prices.png' alt='все цены' /></a>",
-                    cityKeyFrom, countryKeyTo, tourKey, hotelKey, dateFrom, filterRateCode);
+                    @"<a class='AllPricesLnk' href='http://online.solvex.travel/pricelist/complex.aspx?{0}country={1}&tour={2}&hotel={3}&dateFrom={4:yyyy-MM-dd}&rate={5}&ratesSwitcher=1'><img src='./styles/images/all-prices.png' alt='все цены' /></a>",
+                    cityKeyFrom.HasValue ? String.Format("departFrom={0}&", cityKeyFrom) : String.Empty, countryKeyTo, tourKey, hotelKey, dateFrom, filterRateCode);
         }
 
         public static string GetQuotaText(QuotesStates qs)
@@ -306,7 +306,7 @@ namespace Controls
             }
         }
 
-        public static StringBuilder GetAviaQuotasHtml(StringBuilder sb, int mergedRows, Dictionary<int, QuotaStatePlaces> aviaQuotesTo, Dictionary<int, QuotaStatePlaces> aviaQuotesFrom, int? flightCityKeyFrom, int? flightCityKeyTo, DateTime dateFrom, DateTime dateTo)
+        public static StringBuilder GetAviaQuotasHtml(StringBuilder sb, int mergedRows, Dictionary<int, FlightPlainInfo> directFlightsInfo, Dictionary<int, FlightPlainInfo> backFlightsInfo, int? flightCityKeyFrom, int? flightCityKeyTo, DateTime dateFrom, DateTime dateTo)
         {
             if (sb == null) throw new ArgumentNullException("sb");
             //if (aviaQuotesTo == null) throw new ArgumentNullException("aviaQuotesTo");
@@ -314,9 +314,9 @@ namespace Controls
             //if (aviaQuotesFrom == null) throw new ArgumentNullException("aviaQuotesFrom");
             //if (aviaQuotesFrom.Values.Any(q => q.QuotaState != QuotesStates.Undefined) && !flightCityKeyFrom.HasValue) throw new ArgumentNullException("flightCityKeyFrom", "Параметр не может быть null так как есть квоты.");
 
-            for (int i = 0; i < aviaQuotesTo.Count; i++)
+            for (int i = 0; i < directFlightsInfo.Count; i++)
             {
-                var aviaQuote = aviaQuotesTo[i];
+                var aviaQuote = directFlightsInfo[i].QuotaState;
                 var aviaQuotaState = aviaQuote.QuotaState;
                 var imgHtml = String.Format(@"<img alt='{0}' src='{1}' />", aviaQuotaState,
                     String.Format(@"./styles/images/{0}-plain-forward.png", aviaQuotaState).ToLower());
@@ -333,7 +333,7 @@ namespace Controls
                         ? @"&nbsp;"
                         : linkHtml);
 
-                aviaQuote = aviaQuotesFrom[i];
+                aviaQuote = backFlightsInfo[i].QuotaState;
                 aviaQuotaState = aviaQuote.QuotaState;
                 imgHtml = String.Format(@"<img alt='{0}' src='{1}' />", aviaQuotaState,
                     String.Format(@"./styles/images/{0}-plain.png", aviaQuotaState).ToLower());

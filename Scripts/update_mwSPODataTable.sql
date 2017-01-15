@@ -1,5 +1,5 @@
-alter table mwSPODataTable add sd_cnkeys varchar(256) null
-alter table mwSPODataTable add sd_ctkeys varchar(256) null
+--alter table mwSPODataTable add sd_cnkeys varchar(256) null
+--alter table mwSPODataTable add sd_ctkeys varchar(256) null
 --sp_refreshviewforall 'mwSPOData'
 
 create table #hdKeys (xKey int identity(1,1), xSdKey int, xHdKey int, xCnKey int, xCtKey int, xCnKeys varchar(256), xCtKeys varchar(256))

@@ -54,11 +54,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Logic.Basket", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Logic.CalculatedServices", "Logic\Seemplexity.Logic.CalculatedServices\Seemplexity.Logic.CalculatedServices.csproj", "{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seemplexity.Extensions.ImportDataToNoSQL", "Extensions\Seemplexity.Extensions.ImportDataToNoSQL\Seemplexity.Extensions.ImportDataToNoSQL.csproj", "{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}"
-EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 13
+		SccNumberOfProjects = 12
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://seemplexity.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -101,10 +99,6 @@ Global
 		SccProjectTopLevelParentUniqueName11 = QDSearch.sln
 		SccProjectName11 = Logic/Seemplexity.Logic.CalculatedServices
 		SccLocalPath11 = Logic\\Seemplexity.Logic.CalculatedServices
-		SccProjectUniqueName12 = Extensions\\Seemplexity.Extensions.ImportDataToNoSQL\\Seemplexity.Extensions.ImportDataToNoSQL.csproj
-		SccProjectTopLevelParentUniqueName12 = QDSearch.sln
-		SccProjectName12 = Extensions/Seemplexity.Extensions.ImportDataToNoSQL
-		SccLocalPath12 = Extensions\\Seemplexity.Extensions.ImportDataToNoSQL
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,10 +147,6 @@ Global
 		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +156,5 @@ Global
 		{D5F39054-2443-47F9-B9B6-77C36640AEF0} = {26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}
 		{D57BE4FA-C893-4AC5-B52E-B501F889D549} = {26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}
 		{83A51B3D-D3B6-41C0-A6FD-418C15CDCE70} = {26E77D56-C4D9-4D77-AA5A-C54C2D1880FE}
-		{EFDCEF9C-C433-4865-9086-1F2C063BF7C7} = {CFE58ABC-D4C0-4102-81FB-56AA1EA7C5BC}
 	EndGlobalSection
 EndGlobal

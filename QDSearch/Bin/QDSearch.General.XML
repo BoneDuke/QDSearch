@@ -467,11 +467,6 @@
             Класс отеля
             </summary>
         </member>
-        <member name="F:QDSearch.DataModel.Hotel.QuotaState">
-            <summary>
-            Значение квоты по отелю
-            </summary>
-        </member>
         <member name="P:QDSearch.DataModel.Hotel.Key">
             <summary>
             Ключ отеля
@@ -565,6 +560,11 @@
         <member name="P:QDSearch.DataModel.Hotel.IsValidPrice">
             <summary>
             Используется для определения, есть ли на этот отель цена. Если нет, подкрашивается серым в фильтре
+            </summary>
+        </member>
+        <member name="F:QDSearch.DataModel.Hotel.QuotaState">
+            <summary>
+            Значение квоты по отелю
             </summary>
         </member>
         <member name="T:QDSearch.DataModel.DistinctEqualityComparer">
@@ -1162,14 +1162,6 @@
             Класс, определяющий параметры цены
             </summary>
         </member>
-        <member name="M:QDSearch.DataModel.PriceValue.ToString">
-            <summary>
-            Возвращает строку, представляющую текущий объект.
-            </summary>
-            <returns>
-            Строка, представляющая текущий объект.
-            </returns>
-        </member>
         <member name="P:QDSearch.DataModel.PriceValue.Price">
             <summary>
             Значение цены
@@ -1179,6 +1171,14 @@
             <summary>
             Значение валюты
             </summary>
+        </member>
+        <member name="M:QDSearch.DataModel.PriceValue.ToString">
+            <summary>
+            Возвращает строку, представляющую текущий объект.
+            </summary>
+            <returns>
+            Строка, представляющая текущий объект.
+            </returns>
         </member>
         <member name="T:QDSearch.DataModel.QuotaPlain">
             <summary>
@@ -1287,15 +1287,6 @@
             Играет роль хэш-функции для определенного типа.
             </summary>
         </member>
-        <member name="M:QDSearch.DataModel.QuotaStatePlaces.Equals(System.Object)">
-            <summary>
-            Определяет, равен ли заданный объект текущему объекту.
-            </summary>
-            <returns>
-            true, если указанный объект равен текущему объекту; в противном случае — false.
-            </returns>
-            <param name="obj">Объект, который требуется сравнить с текущим объектом.</param>
-        </member>
         <member name="P:QDSearch.DataModel.QuotaStatePlaces.QuotaState">
             <summary>
             Статус квотирования
@@ -1310,6 +1301,15 @@
             <summary>
             Является ли квота квотой на заезд
             </summary>
+        </member>
+        <member name="M:QDSearch.DataModel.QuotaStatePlaces.Equals(System.Object)">
+            <summary>
+            Определяет, равен ли заданный объект текущему объекту.
+            </summary>
+            <returns>
+            true, если указанный объект равен текущему объекту; в противном случае — false.
+            </returns>
+            <param name="obj">Объект, который требуется сравнить с текущим объектом.</param>
         </member>
         <member name="T:QDSearch.DataModel.QuotaType">
             <summary>
@@ -1705,6 +1705,237 @@
         <member name="F:QDSearch.DataModel.DupUserAttributes.CanSeeOrderdsOfNetworks">
             <summary>
             Флаг разрешает пользователю просматривать заказы всех сетей, в которых участвует его агентство
+            </summary>
+        </member>
+        <member name="T:QDSearch.DataModel.SearchResult">
+            <summary>
+            Результат поиска
+            </summary>
+        </member>
+        <member name="M:QDSearch.DataModel.SearchResult.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResult.IsMorePages">
+            <summary>
+            Нужно ли выводить ссылку на след. страницы
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResult.NextPageRowCounter">
+            <summary>
+            Номер строки, с которой будет начинаться след. страница
+            </summary>
+        </member>
+        <member name="F:QDSearch.DataModel.SearchResult.SearchItems">
+            <summary>
+            Элементы таблицы с результатами поиска
+            </summary>
+        </member>
+        <member name="F:QDSearch.DataModel.SearchResult.SortType">
+            <summary>
+            Тип сортировки
+            </summary>
+        </member>
+        <member name="F:QDSearch.DataModel.SearchResult.PriceFor">
+            <summary>
+            Тип цены (за номер или за человека)
+            </summary>
+        </member>
+        <member name="T:QDSearch.DataModel.SearchResultItem">
+            <summary>
+            Строка в поиске
+            </summary>
+        </member>
+        <member name="M:QDSearch.DataModel.SearchResultItem.Sort``1(System.Collections.Generic.IEnumerable{QDSearch.DataModel.SearchResultItem},System.Func{QDSearch.DataModel.SearchResultItem,``0},QDSearch.DataModel.SortingDirection)">
+            <summary>
+            Возвращает отсортированный список по параметрам
+            </summary>
+            <param name="list">Список для сортировки</param>
+            <param name="sorter">Функция сортировки</param>
+            <param name="direction">Направление</param>
+            <typeparam name="TKey">Тип элемента списка</typeparam>
+            <returns></returns>
+        </member>
+        <member name="F:QDSearch.DataModel.SearchResultItem.PriceInRates">
+            <summary>
+            Цена в различных валютах
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.PriceKey">
+            <summary>
+            Ключ цены, нужее для генерации ссылки на корзину
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.Price">
+            <summary>
+            Цена, как она лежит в базе. НАРУЖУ НЕ ВЫВОДИТЬ
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.RateCode">
+            <summary>
+            Валюта цены, как она лежит в базе. НАРУЖУ НЕ ВЫВОДИТЬ
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.Date">
+            <summary>
+            Дата цены
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.TourName">
+            <summary>
+            Название тура
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.TourUrl">
+            <summary>
+            Ссылка на тур
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.TourHasDescription">
+            <summary>
+            Имеет ли тур описание
+            </summary>
+        </member>
+        <member name="F:QDSearch.DataModel.SearchResultItem.PriceFor">
+            <summary>
+            Тип цены (за номер или за человека)
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.IsPriceForRoom">
+            <summary>
+            Цена за номер
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.CountryKey">
+            <summary>
+            Ключ страны
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.FlightCityKeyFrom">
+            <summary>
+            Ключ города вылета
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.FlightCityKeyTo">
+            <summary>
+            Ключ города прилета
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.BackFlightCityKeyFrom">
+            <summary>
+            Ключ города вылета обратного перелета
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.BackFlightCityKeyTo">
+            <summary>
+            Ключ города прилета обратного перелета
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.HotelKey">
+            <summary>
+            Ключ главного отеля
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.TourKey">
+            <summary>
+            Ключ тура
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.DateTourEnd">
+            <summary>
+            Дата окончания тура
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.FilterRateCode">
+            <summary>
+            Код валюты фильтра, устаревшее, не использовать!!!
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.Hotels">
+            <summary>
+            Список отелей
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.DirectFlightsInfo">
+            <summary>
+            Информация о прямых перелетах, подошедших по фильтру квот, параметр не может быть null
+            Формат структуры такой: ключ внешнего словаря - класс перелета (список классов задается в Web.config)
+            в словаре может вообще не быть какого-то класса, это значит что по этому классу ни один перелет не подошел
+            ключ внутреннего словаря - приоритет (чем меньше ключ, тем выше приоритет), в поиске нужно выводить перелет с самым высоким приоритетом
+            если затем в корзине будем делать возможность подмены перелета, то ее адо будет делать и в поиске
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.BackFlightsInfo">
+            <summary>
+            Информация о прямых перелетах, подошедших по фильтру квот, параметр не может быть null
+            структура аналогична DirectFlightsInfo
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SearchResultItem.MainPlacesCount">
+            <summary>
+            Число основных мест в проживании
+            </summary>
+        </member>
+        <member name="M:QDSearch.DataModel.SearchResultItem.GetTourValidTo">
+            <summary>
+            Дата, до которой действителен тур
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QDSearch.DataModel.SimpleCourse">
+            <summary>
+            Курс для внутреннего использования в программе
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SimpleCourse.Course">
+            <summary>
+            Курс
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SimpleCourse.CourseCb">
+            <summary>
+            Курс ЦБ
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SimpleCourse.DateFrom">
+            <summary>
+            Дата с
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SimpleCourse.DateTo">
+            <summary>
+            Дата по
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SimpleCourse.RateKeyFrom">
+            <summary>
+            Ключ валюты из которой конвертируем
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.SimpleCourse.RateKeyTo">
+            <summary>
+            Ключ валюты в которую конвертируем
+            </summary>
+        </member>
+        <member name="T:QDSearch.DataModel.CrossCourse">
+            <summary>
+            Курс для конвертации на лету в поиске
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.CrossCourse.Course">
+            <summary>
+            Курс
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.CrossCourse.RateCodeFrom">
+            <summary>
+            Код валюты из которой конвертируем
+            </summary>
+        </member>
+        <member name="P:QDSearch.DataModel.CrossCourse.RateCodeTo">
+            <summary>
+            Код валюты в которую конвертируем
             </summary>
         </member>
         <member name="T:QDSearch.Extensions.AccomodationsExtension">
@@ -2381,237 +2612,6 @@
             <param name="rateKey">Ключ валюты</param>
             <returns></returns>
         </member>
-        <member name="T:QDSearch.DataModel.SearchResult">
-            <summary>
-            Результат поиска
-            </summary>
-        </member>
-        <member name="M:QDSearch.DataModel.SearchResult.#ctor">
-            <summary>
-            Конструктор класса
-            </summary>
-        </member>
-        <member name="F:QDSearch.DataModel.SearchResult.SearchItems">
-            <summary>
-            Элементы таблицы с результатами поиска
-            </summary>
-        </member>
-        <member name="F:QDSearch.DataModel.SearchResult.SortType">
-            <summary>
-            Тип сортировки
-            </summary>
-        </member>
-        <member name="F:QDSearch.DataModel.SearchResult.PriceFor">
-            <summary>
-            Тип цены (за номер или за человека)
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResult.IsMorePages">
-            <summary>
-            Нужно ли выводить ссылку на след. страницы
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResult.NextPageRowCounter">
-            <summary>
-            Номер строки, с которой будет начинаться след. страница
-            </summary>
-        </member>
-        <member name="T:QDSearch.DataModel.SearchResultItem">
-            <summary>
-            Строка в поиске
-            </summary>
-        </member>
-        <member name="M:QDSearch.DataModel.SearchResultItem.Sort``1(System.Collections.Generic.IEnumerable{QDSearch.DataModel.SearchResultItem},System.Func{QDSearch.DataModel.SearchResultItem,``0},QDSearch.DataModel.SortingDirection)">
-            <summary>
-            Возвращает отсортированный список по параметрам
-            </summary>
-            <param name="list">Список для сортировки</param>
-            <param name="sorter">Функция сортировки</param>
-            <param name="direction">Направление</param>
-            <typeparam name="TKey">Тип элемента списка</typeparam>
-            <returns></returns>
-        </member>
-        <member name="F:QDSearch.DataModel.SearchResultItem.PriceInRates">
-            <summary>
-            Цена в различных валютах
-            </summary>
-        </member>
-        <member name="F:QDSearch.DataModel.SearchResultItem.PriceFor">
-            <summary>
-            Тип цены (за номер или за человека)
-            </summary>
-        </member>
-        <member name="M:QDSearch.DataModel.SearchResultItem.GetTourValidTo">
-            <summary>
-            Дата, до которой действителен тур
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.PriceKey">
-            <summary>
-            Ключ цены, нужее для генерации ссылки на корзину
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.Price">
-            <summary>
-            Цена, как она лежит в базе. НАРУЖУ НЕ ВЫВОДИТЬ
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.RateCode">
-            <summary>
-            Валюта цены, как она лежит в базе. НАРУЖУ НЕ ВЫВОДИТЬ
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.Date">
-            <summary>
-            Дата цены
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.TourName">
-            <summary>
-            Название тура
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.TourUrl">
-            <summary>
-            Ссылка на тур
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.TourHasDescription">
-            <summary>
-            Имеет ли тур описание
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.IsPriceForRoom">
-            <summary>
-            Цена за номер
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.CountryKey">
-            <summary>
-            Ключ страны
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.FlightCityKeyFrom">
-            <summary>
-            Ключ города вылета
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.FlightCityKeyTo">
-            <summary>
-            Ключ города прилета
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.BackFlightCityKeyFrom">
-            <summary>
-            Ключ города вылета обратного перелета
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.BackFlightCityKeyTo">
-            <summary>
-            Ключ города прилета обратного перелета
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.HotelKey">
-            <summary>
-            Ключ главного отеля
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.TourKey">
-            <summary>
-            Ключ тура
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.DateTourEnd">
-            <summary>
-            Дата окончания тура
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.FilterRateCode">
-            <summary>
-            Код валюты фильтра, устаревшее, не использовать!!!
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.Hotels">
-            <summary>
-            Список отелей
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.DirectFlightsInfo">
-            <summary>
-            Информация о прямых перелетах, подошедших по фильтру квот, параметр не может быть null
-            Формат структуры такой: ключ внешнего словаря - класс перелета (список классов задается в Web.config)
-            в словаре может вообще не быть какого-то класса, это значит что по этому классу ни один перелет не подошел
-            ключ внутреннего словаря - приоритет (чем меньше ключ, тем выше приоритет), в поиске нужно выводить перелет с самым высоким приоритетом
-            если затем в корзине будем делать возможность подмены перелета, то ее адо будет делать и в поиске
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.BackFlightsInfo">
-            <summary>
-            Информация о прямых перелетах, подошедших по фильтру квот, параметр не может быть null
-            структура аналогична DirectFlightsInfo
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SearchResultItem.MainPlacesCount">
-            <summary>
-            Число основных мест в проживании
-            </summary>
-        </member>
-        <member name="T:QDSearch.DataModel.SimpleCourse">
-            <summary>
-            Курс для внутреннего использования в программе
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SimpleCourse.Course">
-            <summary>
-            Курс
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SimpleCourse.CourseCb">
-            <summary>
-            Курс ЦБ
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SimpleCourse.DateFrom">
-            <summary>
-            Дата с
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SimpleCourse.DateTo">
-            <summary>
-            Дата по
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SimpleCourse.RateKeyFrom">
-            <summary>
-            Ключ валюты из которой конвертируем
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.SimpleCourse.RateKeyTo">
-            <summary>
-            Ключ валюты в которую конвертируем
-            </summary>
-        </member>
-        <member name="T:QDSearch.DataModel.CrossCourse">
-            <summary>
-            Курс для конвертации на лету в поиске
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.CrossCourse.Course">
-            <summary>
-            Курс
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.CrossCourse.RateCodeFrom">
-            <summary>
-            Код валюты из которой конвертируем
-            </summary>
-        </member>
-        <member name="P:QDSearch.DataModel.CrossCourse.RateCodeTo">
-            <summary>
-            Код валюты в которую конвертируем
-            </summary>
-        </member>
         <member name="T:QDSearch.Extensions.RealCoursesExtension">
             <summary>
             Расширение для работы с реальными курсами
@@ -3028,11 +3028,6 @@
             Глобальный статический класс приложения содержит в себе доступ к глобальным парамтерам приложения.
             </summary>
         </member>
-        <member name="F:QDSearch.Globals.Settings">
-            <summary>
-            Дополнительные настройки приложения
-            </summary>
-        </member>
         <member name="P:QDSearch.Globals.CustomConfigurationSectionName">
             <summary>
             Имя раздела конфигурации библиотеки. По умолчанию - QDSSection
@@ -3046,9 +3041,19 @@
             Варианты AspNet|Memory|Redis
             </summary>
         </member>
+        <member name="F:QDSearch.Globals.Settings">
+            <summary>
+            Дополнительные настройки приложения
+            </summary>
+        </member>
         <member name="T:QDSearch.Helpers.CacheHelper">
             <summary>
             содержит ряд методов облегчающих работу с кешем
+            </summary>
+        </member>
+        <member name="F:QDSearch.Helpers.CacheHelper.tagCachesPrefixes">
+            <summary>
+            Список префиксов зависимостей кэшей. Создаем эти зависимости при добавлении новых значений в кэш, если они еще не были созданы до этого
             </summary>
         </member>
         <member name="F:QDSearch.Helpers.CacheHelper.CharterDirectionHash">
@@ -3096,11 +3101,6 @@
             Префикс корневого элемента
             </summary>
         </member>
-        <member name="F:QDSearch.Helpers.CacheHelper.tagCachesPrefixes">
-            <summary>
-            Список префиксов зависимостей кэшей. Создаем эти зависимости при добавлении новых значений в кэш, если они еще не были созданы до этого
-            </summary>
-        </member>
         <member name="F:QDSearch.Helpers.CacheHelper.SqlCacheDependencyTablesMainDb">
             <summary>
             Список таблиц, по которым будем отслеживать изменения в кэше (основная база)
@@ -3109,6 +3109,11 @@
         <member name="F:QDSearch.Helpers.CacheHelper.SqlCacheDependencyTablesSearchDb">
             <summary>
             Список таблиц, по которым будем отслеживать изменения в кэше (поисковая база)
+            </summary>
+        </member>
+        <member name="P:QDSearch.Helpers.CacheHelper.Cache">
+            <summary>
+            Глобальный кэш приложения
             </summary>
         </member>
         <member name="M:QDSearch.Helpers.CacheHelper.GetCacheItem``1(System.String)">
@@ -3173,11 +3178,6 @@
             <param name="onRemoved">Цена объекта относительно других элементов, сохраненных в кэше, выраженная перечислением CacheItemPriority. 
             Это значение используется в кэше при исключении объектов. Объекты с более низкой ценой удаляются из кэша раньше, чем объекты с более высокой ценой.</param>
             <param name="isTagMode">Добавлять ли данные в кэш как Insert или как Add (http://habrahabr.ru/post/61617/)</param>
-        </member>
-        <member name="P:QDSearch.Helpers.CacheHelper.Cache">
-            <summary>
-            Глобальный кэш приложения
-            </summary>
         </member>
         <member name="T:QDSearch.Helpers.Converters">
             <summary>
@@ -3280,6 +3280,65 @@
                 Расшифровать строку для Url
             </summary>
             <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QDSearch.Helpers.Cryptography.EncryptionHelper">
+            <summary>
+            Enables simple TripleDES encryption with or without hashing
+            </summary>
+        </member>
+        <member name="F:QDSearch.Helpers.Cryptography.EncryptionHelper.EncryptionKey">
+            <summary>
+            Encryption key. Used to encrypt and decrypt.
+            </summary>
+        </member>
+        <member name="M:QDSearch.Helpers.Cryptography.EncryptionHelper.Encrypt(System.String,System.Boolean)">
+            <summary>
+            Encrypt text string
+            </summary>
+            <param name="toEncrypt">The string of data to encrypt</param>
+            <param name="useHashing">Weather hashing is used or not</param>
+            <returns>An encrypted string</returns>
+        </member>
+        <member name="M:QDSearch.Helpers.Cryptography.EncryptionHelper.Decrypt(System.String,System.Boolean)">
+            <summary>
+            Decrypts a text string
+            </summary>
+            <param name="cipherString">The encrypted string</param>
+            <param name="useHashing">Weather hashing is used or not</param>
+            <returns>Decrypted text string</returns>
+        </member>
+        <member name="T:QDSearch.Helpers.Cryptography.TripleDesEncryption">
+            <summary>
+                класс для шифрования/дешифрования строк через TripleDES
+            </summary>
+        </member>
+        <member name="F:QDSearch.Helpers.Cryptography.TripleDesEncryption.KeySize128">
+            <summary>
+                возможный размер = 128 ключа TripleDES
+            </summary>
+        </member>
+        <member name="F:QDSearch.Helpers.Cryptography.TripleDesEncryption.KeySize192">
+            <summary>
+                возможный размер = 192 ключа TripleDES
+            </summary>
+        </member>
+        <member name="M:QDSearch.Helpers.Cryptography.TripleDesEncryption.EncryptString(System.String,System.Int32,System.String)">
+            <summary>
+                шифрует строку
+            </summary>
+            <param name="inputString">строка для шифрования</param>
+            <param name="dwKeySize">размер ключа</param>
+            <param name="privateKey">ключевого секретное слово для генерации ключа</param>
+            <returns></returns>
+        </member>
+        <member name="M:QDSearch.Helpers.Cryptography.TripleDesEncryption.DecryptString(System.String,System.Int32,System.String)">
+            <summary>
+                дешифрует строку
+            </summary>
+            <param name="inputString">зашифрованная строка</param>
+            <param name="dwKeySize">размер ключа</param>
+            <param name="privateKey">ключевого секретное слово для генерации ключа</param>
             <returns></returns>
         </member>
         <member name="T:QDSearch.Helpers.DataReaderExtensions">
@@ -3415,32 +3474,6 @@
             <param name="columnName">Название колонки</param>
             <returns></returns>
         </member>
-        <member name="T:QDSearch.Helpers.Cryptography.EncryptionHelper">
-            <summary>
-            Enables simple TripleDES encryption with or without hashing
-            </summary>
-        </member>
-        <member name="F:QDSearch.Helpers.Cryptography.EncryptionHelper.EncryptionKey">
-            <summary>
-            Encryption key. Used to encrypt and decrypt.
-            </summary>
-        </member>
-        <member name="M:QDSearch.Helpers.Cryptography.EncryptionHelper.Encrypt(System.String,System.Boolean)">
-            <summary>
-            Encrypt text string
-            </summary>
-            <param name="toEncrypt">The string of data to encrypt</param>
-            <param name="useHashing">Weather hashing is used or not</param>
-            <returns>An encrypted string</returns>
-        </member>
-        <member name="M:QDSearch.Helpers.Cryptography.EncryptionHelper.Decrypt(System.String,System.Boolean)">
-            <summary>
-            Decrypts a text string
-            </summary>
-            <param name="cipherString">The encrypted string</param>
-            <param name="useHashing">Weather hashing is used or not</param>
-            <returns>Decrypted text string</returns>
-        </member>
         <member name="T:QDSearch.Helpers.ExceptionHandling">
             <summary>
             Статический класс реализующий хелперы по обработке ошибок в веб приложении
@@ -3482,39 +3515,6 @@
             </summary>
             <param name="xmlString">Строка с сериализованным объектом</param>
             <typeparam name="T">Тип объекта</typeparam>
-            <returns></returns>
-        </member>
-        <member name="T:QDSearch.Helpers.Cryptography.TripleDesEncryption">
-            <summary>
-                класс для шифрования/дешифрования строк через TripleDES
-            </summary>
-        </member>
-        <member name="F:QDSearch.Helpers.Cryptography.TripleDesEncryption.KeySize128">
-            <summary>
-                возможный размер = 128 ключа TripleDES
-            </summary>
-        </member>
-        <member name="F:QDSearch.Helpers.Cryptography.TripleDesEncryption.KeySize192">
-            <summary>
-                возможный размер = 192 ключа TripleDES
-            </summary>
-        </member>
-        <member name="M:QDSearch.Helpers.Cryptography.TripleDesEncryption.EncryptString(System.String,System.Int32,System.String)">
-            <summary>
-                шифрует строку
-            </summary>
-            <param name="inputString">строка для шифрования</param>
-            <param name="dwKeySize">размер ключа</param>
-            <param name="privateKey">ключевого секретное слово для генерации ключа</param>
-            <returns></returns>
-        </member>
-        <member name="M:QDSearch.Helpers.Cryptography.TripleDesEncryption.DecryptString(System.String,System.Int32,System.String)">
-            <summary>
-                дешифрует строку
-            </summary>
-            <param name="inputString">зашифрованная строка</param>
-            <param name="dwKeySize">размер ключа</param>
-            <param name="privateKey">ключевого секретное слово для генерации ключа</param>
             <returns></returns>
         </member>
         <member name="T:QDSearch.Helpers.Web">
@@ -3669,6 +3669,16 @@
         <member name="F:QDSearch.Repository.MtSearch.GetFilterMethods.SortingColumns">
             <summary>
             Массив для хранения столбцов, по которым будет происходить сортировка
+            </summary>
+        </member>
+        <member name="T:QDSearch.Repository.MtSearch.GetFilterMethods.ClearOldDirectionCacheDelegate">
+            <summary>
+            Делегат для вызова потока очистки кэша направлений
+            </summary>
+        </member>
+        <member name="T:QDSearch.Repository.MtSearch.GetFilterMethods.ClearOldObjectCacheDelegate">
+            <summary>
+            Делегат для вызова потока очистки кэша объектов
             </summary>
         </member>
         <member name="M:QDSearch.Repository.MtSearch.GetFilterMethods.ClearOldDrectionCache">
@@ -4020,16 +4030,6 @@
             <param name="tourKey">Ключ рассчитанного тура (to_key из таблицы tp_tours)</param>
             <returns></returns>
         </member>
-        <member name="T:QDSearch.Repository.MtSearch.GetFilterMethods.ClearOldDirectionCacheDelegate">
-            <summary>
-            Делегат для вызова потока очистки кэша направлений
-            </summary>
-        </member>
-        <member name="T:QDSearch.Repository.MtSearch.GetFilterMethods.ClearOldObjectCacheDelegate">
-            <summary>
-            Делегат для вызова потока очистки кэша объектов
-            </summary>
-        </member>
         <member name="T:QDSearch.Repository.MtSearch.MtSearchDbDataContext">
             <summary>
             Контекст поисковой БД
@@ -4263,6 +4263,11 @@
             Например MsSql, Memcache, NoSql, MySql
             </summary>
         </member>
+        <member name="P:QDSearch.ViewState.StsPageStatePageAdapter.ViewStateString">
+            <summary>
+            Возвращает текстовое значение строки ViewState
+            </summary>
+        </member>
         <member name="M:QDSearch.ViewState.StsPageStatePageAdapter.OnLoad(System.EventArgs)">
             <summary>
             Необходима для подключения StsStateKeeper, в случае если PageState или Session хранится в InMsSql InSession StateServer SQLServer
@@ -4274,11 +4279,6 @@
             Возвращает PageStatePersister в зависимости он настроек ViewState mode в web.config
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:QDSearch.ViewState.StsPageStatePageAdapter.ViewStateString">
-            <summary>
-            Возвращает текстовое значение строки ViewState
-            </summary>
         </member>
         <member name="T:QDSearch.ViewState.StsSqlPageStatePersister">
             <summary>
@@ -4338,15 +4338,15 @@
             Класс по работе с сессией
             </summary>
         </member>
-        <member name="M:QDSearch.ViewState.StsStateKeeperHandler.ProcessRequest(System.Web.HttpContext)">
-            <summary>
-            Метод по обработке запроса
-            </summary>
-        </member>
         <member name="P:QDSearch.ViewState.StsStateKeeperHandler.IsReusable">
             <summary>
             Данный обработчик необходим для корректной работы StsStateKeeper.
             Он выполняет обработку запросов от StsStateKeeper на обновление состояния сессии и PageState
+            </summary>
+        </member>
+        <member name="M:QDSearch.ViewState.StsStateKeeperHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Метод по обработке запроса
             </summary>
         </member>
         <member name="T:QDSearch.ViewState.StsViewState">
